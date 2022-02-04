@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#F1F6FA">
+  <title>New site</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="app">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/sub-header.html')
+      
+      <div class="wrap">
+        @include('partials/status.html')
+
+        <div class="exp-content">
+            <div class="exp-content__sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                    <div class="sidebar__name">Александр Александров</div>
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__nav__menu1">
+                            <li>
+                                <a href="">Просмотр профиля</a>
+                            </li>
+                            <li>
+                                <a href="">Пройти отбор</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">Редактировать профиль</a>
+                            </li>
+                            <li>
+                                <a href="">Контактная информация</a>
+                            </li>
+                            <li>
+                                <a href="">Резюме</a>
+                            </li>
+                            <li>
+                                <a href="">Портфолио</a>
+                            </li>
+                            <li class="last">
+                                <a href="">Личная информация
+                                <svg width="24px" height="24px" class="open">
+                                    <use xlink:href="./img/sprite.svg#edit"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="exp-content__edit">
+                <div class="exp-content__top">
+                    Редактирование личной информации
+                </div>
+
+                <div class="exp__about" style="background-image: url('./img/about/about-fon.png');">
+                    <div class="exp__about__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                    <a href="" class="btn btn-primary">Изменить фото</a>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+    </main>
+    
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

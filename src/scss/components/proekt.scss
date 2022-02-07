@@ -1,0 +1,228 @@
+.proekt{
+    margin-top: 44px;
+    display: flex;
+}
+
+.filter__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 48px;
+}
+
+.filter__tabs{
+    display: flex;
+}
+.filter__tab{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #828282;
+    margin-right: 42px;
+    margin-bottom: 32px;
+}
+
+.filter__tab:last-child{
+    margin-right: 0;
+}
+.filter__tab.active, .filter__tab:hover{
+    color: #000000;
+}
+
+@media(min-width: 1450px){
+    .proekt{
+        margin-left: -32px;
+    }
+}
+
+.filter__label{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    display: block;
+    color: #737B7D;
+    margin-bottom: 13px;
+}
+
+.filter{
+    flex: 0 0 300px;
+    margin-right: 73px;
+}
+
+.input-search{
+    position: relative;
+    input{
+        width: 100%;
+        height: 48px;
+        padding-left: 50px;
+        margin-bottom: 0;
+    }
+    button{
+        top: 50%;
+        left: 13px;
+        transform: translateY(-50%);
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        padding: 0;
+    }
+    button:hover{
+        background-color: #F1F6FA;
+    }
+}
+
+.filter__row{
+    margin-bottom: 27px;
+}
+.filter__checkboxes{
+    margin-bottom: 63px;
+    .form-check-input{
+        width: 1.3em;
+        height: 1.3em;
+        border: 2px solid #C3CBCD
+    }
+    .form-check-input:checked{
+        border: 2px solid #0d6efd;
+    }
+    .form-check-label{
+        font-size: 14px;
+        line-height: 24px;
+        color: #505565;
+        padding-left: 8px;
+        padding-top: 1px;
+    }
+    .form-check{
+        margin-bottom: 10px;
+    }
+}
+
+.filter__links{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+}
+.filter__links li{
+    list-style: none;
+    margin-bottom: 24px;
+}
+.filter__links a{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #737B7D;
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+.filter__links a:hover{
+    color: #000;
+}
+
+.proekt__right{
+    flex: 1;
+}
+
+.proekt__detail{
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.proekt__search{
+    max-width: 633px;
+}
+
+.search__tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.search__tag{
+    padding: 4px 10px;
+    background: #DBEEFB;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    color: #3C64B1;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    position: relative;
+    button{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+}
+
+.proekt__search{
+    margin-bottom: 32px;
+}
+
+.proekt__name{
+    padding: 41px 33px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #0A243F;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E0E4EF;;
+}
+.proekt__actios{
+    margin-left: 15px;
+    display: flex;
+}
+
+.proekt__actios button{
+    background: #FFFFFF;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    color: #000;
+}
+.proekt__actios button:hover, .proekt__actios button:active{
+    background-color: #F1F6FA;
+    color: var(--color-blue);
+}
+
+.proekt__content{
+    padding-top: 24px;
+    padding-right: 33px;
+    padding-left: 33px;
+}
+.proekt__content__top{
+    display: flex;
+}
+.proekt__content__left{
+    flex: 1;
+}
+.proekt__content__status{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 4px;
+}

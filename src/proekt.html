@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#F1F6FA">
+  <title>New site</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="app">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/sub-header.html')
+      
+      <div class="wrap">
+       
+        <div class="proekt">
+            <div class="filter">
+                <div class="filter__title">
+                    Фильтры
+                </div>
+
+                <div class="filter__tabs">
+                    <a href="" class="filter__tab active">Проекты</a>
+                    <a href="" class="filter__tab">Конкурсы</a>
+                </div>
+                <div class="filter__row">
+                    <label class="filter__label">Категория</label>
+                    <div class="search-input">
+                        <div class="search-input__input">
+                            <input class="input" type="text" placeholder="Начните писать категорию">
+                            <button type="button">
+                                <svg width="17.5px" height="17.5px">
+                                    <use xlink:href="./img/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                            <ul class="search-input__list">
+                                <li><a href="javascript:void(0)">Навык 1</a></li>
+                                <li><a href="javascript:void(0)">Навык 2</a></li>
+                                <li><a href="javascript:void(0)">Навык 3</a></li>
+                                <li><a href="javascript:void(0)">Навык 4</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="filter__row">
+                    <label class="filter__label">Навыки</label>
+                    <div class="search-input">
+                        <div class="search-input__input">
+                            <input class="input" type="text" placeholder="Начните писать навыки">
+                            <button type="button">
+                                <svg width="17.5px" height="17.5px">
+                                    <use xlink:href="./img/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                            <ul class="search-input__list">
+                                <li><a href="javascript:void(0)">Навык 1</a></li>
+                                <li><a href="javascript:void(0)">Навык 2</a></li>
+                                <li><a href="javascript:void(0)">Навык 3</a></li>
+                                <li><a href="javascript:void(0)">Навык 4</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="filter__row">
+                    <label class="filter__label">Страна</label>
+                    <div class="custom-select">
+                        <select>
+                            <option value="">Выберите страну</option>
+                            <option value="1">Страна 1</option>
+                            <option value="1">Страна 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter__row">
+                    <label class="filter__label">Бюджет</label>
+                    <div class="filter__checkboxes">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                            <label class="form-check-label" for="flexCheckChecked5">
+                                $0 - $100
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+                            <label class="form-check-label" for="flexCheckChecked6">
+                                $100 - $500
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+                            <label class="form-check-label" for="flexCheckChecked7">
+                                $500 - $1000
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
+                            <label class="form-check-label" for="flexCheckChecked8">
+                                $1000 +
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__row">
+                    <label class="filter__label">Опыт</label>
+                    <div class="filter__checkboxes">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Специалист
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                            <label class="form-check-label" for="flexCheckChecked2">
+                                Профессионал
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                            <label class="form-check-label" for="flexCheckChecked3">
+                                Эксперт
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                            <label class="form-check-label" for="flexCheckChecked4">
+                                Топ-эксперт
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__row">
+                    <label class="filter__label">Языки</label>
+                    <div class="custom-select">
+                        <select>
+                            <option value="">Начните вводить язык</option>
+                            <option>Язык 1</option>
+                            <option>Язык 2</option>
+                            <option>Язык 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter__row">
+                    <ul class="filter__links">
+                        <li>
+                            <a href="">Сохранить фильтры</a>
+                        </li>
+                        <li>
+                            <a href="">Мои фильтры</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="proekt__right">
+                <div class="proekt__search">
+                    <div class="search-input">
+                        <div class="search-input__input">
+                            <input class="input" type="text" placeholder="Начните писать навыки">
+                            <button type="button">
+                                <svg width="17.5px" height="17.5px">
+                                    <use xlink:href="./img/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                            <ul class="search-input__list">
+                                <li><a href="javascript:void(0)">Навык 1</a></li>
+                                <li><a href="javascript:void(0)">Навык 2</a></li>
+                                <li><a href="javascript:void(0)">Навык 3</a></li>
+                                <li><a href="javascript:void(0)">Навык 4</a></li>
+                            </ul>
+                        </div>
+                       
+                        <div class="search__tags">
+                            <div class="search__tag">
+                                аналитика
+                                <button>
+                                    <svg width="10px" height="10px">
+                                        <use xlink:href="./img/sprite.svg#close2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search__tag">
+                                продажи
+                                <button>
+                                    <svg width="10px" height="10px">
+                                        <use xlink:href="./img/sprite.svg#close2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="proekt__detail">
+                    <div class="proekt__name">
+                        Дизайн логотипа для сайта
+                        <div class="proekt__actios">
+                            <button type="button">
+                                <svg width="13.2px" height="13.2px">
+                                    <use xlink:href="./img/sprite.svg#dislike"></use>
+                                </svg>
+                            </button>
+                            <button type="button">
+                                <svg width="13.2px" height="13.2px">
+                                    <use xlink:href="./img/sprite.svg#like"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="proekt__content">
+                        <div class="proekt__content__top">
+                            <div class="proekt__content__left">
+                                <div class="proekt__content__status">Заказчик </div>
+                                <div class="proekt__content__person">
+                                    <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                </div>
+                            </div>
+                            <div class="proekt__content__right">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </main>
+    
+    @include('partials/footer.html')
+  </div>
+  
+  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

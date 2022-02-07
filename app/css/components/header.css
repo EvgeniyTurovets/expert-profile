@@ -206,7 +206,7 @@
   color: #022964;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1450px) {
   .sub-header__nav {
     margin-left: -32px;
   }

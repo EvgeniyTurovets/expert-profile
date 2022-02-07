@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#F1F6FA">
+  <meta name="theme-color" content="#111111">
   <title>New site</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -27,7 +25,7 @@
 
 				<form class="header__search">
 					<input type="text" placeholder="Найти работу">
-					<button>
+					<button type="button">
 						<svg width="17.5px" height="17.5px">
 							<use xlink:href="./img/sprite.svg#search"></use>
 						</svg>
@@ -35,7 +33,7 @@
 				</form>
 			</div>
 			<div class="header__right">
-				<button href="" class="header__right__btn header__right__btn--search" id="open-search">
+				<button type="button" class="header__right__btn header__right__btn--search" id="open-search">
 					<svg width="20px" height="20px" class="open">
 						<use xlink:href="./img/sprite.svg#search"></use>
 					</svg>
@@ -100,28 +98,25 @@
 
 
     <main class="main">
-      <div class="sub-header">
-    <div class="wrap">
-      <nav class="sub-header__nav">
-        <ul>
-          <li>
-            <a href="" class="active">Найти проект</a>
-          </li>
-          <li>
-            <a href="">Текущие проекты</a>
-          </li>
-          <li>
-            <a href="">Статистика</a>
-          </li>
-          <li>
-            <a href="">Оплата</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+
+     <br><br>
+      <div class="wrap">
+        <div class="persons-list">
+
+          <div class="news-nav">
+            <nav class="page-sub-menu">
+              <ol>
+                <li><a href="about.html" target="_blank">About</a></li>
+              </ol>
+            </nav>
+          </div>
+
+        </div>
+
+      </div>
+
     </main>
-    
+
     <footer class="footer">
     <div class="wrap">
         <div class="footer__wrap">
@@ -132,7 +127,7 @@
             </div>
             <div class="footer__right">
                 <nav class="footer__right__nav">
-                    <div class="col">
+                    <div class="f-col">
                         <div class="title">Условия</div>
                         <ul>
                             <li>
@@ -155,7 +150,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="f-col">
                         <div class="title">Компания</div>
                         <ul>
                             <li>

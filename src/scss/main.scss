@@ -4,6 +4,12 @@
 @import "fonts";
 @import "settings";
 
+:root{
+    --color-red: rgba(235, 87, 87, 1); 
+    --color-dark: #0A243F;
+    --color-grey: #8B90A0;
+    --color-blue: #0F47C0;
+}
 body,html{
     height: 100%;
 }

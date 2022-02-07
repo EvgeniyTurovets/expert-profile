@@ -27,8 +27,11 @@
         <div class="exp-content">
             <div class="exp-content__sidebar">
                 <div class="sidebar">
-                    <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
-                    <div class="sidebar__name">Александр Александров</div>
+                    <div class="sidebar__top">
+                        <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                        <div class="sidebar__name">Александр Александров</div>
+                    </div>
+                   
                     <nav class="sidebar__nav">
                         <ul class="sidebar__nav__menu1">
                             <li>
@@ -69,9 +72,235 @@
 
                 <div class="exp__about" style="background-image: url('./img/about/about-fon.png');">
                     <div class="exp__about__img" style="background-image: url('./img/about/avatar.jpg');"></div>
-                    <a href="" class="btn btn-primary">Изменить фото</a>
+                    <button type="button" class="btn btn-primary">Изменить фото</button>
                 </div>
 
+                <div class="about__sett">
+                    <div class="about__sett__left">
+                        <div class="about__sett__color" style="background: #0099FF;">OPEN</div>
+                    
+                        <div class="custom-select">
+                            <select>
+                                <option>Выберите статус</option>
+                                <option selected>Открыт к предложениям</option>
+                                <option>Не Открыт к предложениям</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="about__sett__right">
+                        <div class="custom-select">
+                            <select>
+                                <option value="0" selected>Изменить обложку</option>
+                                <option>Применить шаблон</option>
+                                <option>Загрузить изображение</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-content__title">
+                    <h3>
+                        Личная информация
+                    </h3>
+                </div>
+                <div class="exp-content__wrap">
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Имя профиля <span>*</span>
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text" placeholder="Александр Александров">
+                            <a href="" class="exp-link">https://www.expertland.com/entrepreneur/alexandr-aleksandrov</a>
+                        </div>
+                    </div>
+
+                    <!-- Имя профилья валидация -->
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Имя профиля <span>*</span>
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input error" type="text" placeholder="Александр Александров" value="Александр Александров">
+                            <div class="error-text">Такое имя профиля уже зарегистрировано</div>
+                        </div>
+                    </div>
+                    <!-- Имя профилья валидация end -->
+
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Ссылка на вебсайт
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Ссылка на Facebook
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                               Ссылка на Linkedin
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text">
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-content__title">
+                    <h3>
+                        Образование
+                    </h3>
+                </div>
+                <div class="exp-content__wrap">
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Добавить образование
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input" type="text">
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-content__title">
+                    <h3>
+                        Образование
+                    </h3>
+                </div>
+                <div class="exp-content__wrap exp-content__wrap--big">
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            
+                        </div>
+                        <div class="exp-content__row__right">
+                            <div class="form-check__row">
+                                <div class="form-check form-check--check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Индивидуальный предприниматель
+                                    </label>
+                                </div>
+                                <div class="form-check form-check--check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Компания
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Предоставляемые услуги
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <input class="input input--custom-radius" type="text" placeholder="Заголовок">
+                            <div class="textarea">
+                                <textarea placeholder="Опишите преджоставляемые услуги" maxlength="190"></textarea>
+                                <div class="textarea__maxlength">190 символов максимум</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Биография
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <div class="textarea textarea--big">
+                                <textarea placeholder="Опишите вашу биографию" maxlength="200"></textarea>
+                                <div class="textarea__maxlength">200 символов максимум</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Условия работы
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <div class="textarea textarea--big">
+                                <textarea placeholder="Часы работы, условия оплаты, коммуникационные предпочтения" maxlength="200"></textarea>
+                                <div class="textarea__maxlength">200 символов максимум</div>
+                            </div>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-content__title">
+                    <h3>
+                        Стоимость услуг
+                    </h3>
+                </div>
+                <div class="exp-content__wrap">
+                    <div class="exp-content__row">
+                        <div class="exp-content__row__left">
+                            <label class="label">
+                                Добавить стоимость услуг
+                            </label>
+                        </div>
+                        <div class="exp-content__row__right">
+                            <div class="from-to">
+                                <div class="from-to__line">
+                                    <div class="from-to__col1"></div>
+                                    <div class="from-to__col2"><input type="text" class="input"></div>
+                                    <div class="from-to__col3">$ в час</div>
+                                </div>
+                                <div class="from-to__line">
+                                    <div class="from-to__col1">от</div>
+                                    <div class="from-to__col2"> <input type="text" class="input"></div>
+                                    <div class="from-to__col3">$ за проект</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -135,48 +135,41 @@
                 </div>
                 <div class="filter__row">
                     <label class="filter__label">Категория</label>
-                    <div class="search-input">
-                        <div class="search-input__input">
-                            <input class="input" type="text" placeholder="Начните писать категорию">
-                            <button type="button">
-                                <svg width="17.5px" height="17.5px">
-                                    <use xlink:href="./img/sprite.svg#search"></use>
-                                </svg>
-                            </button>
-                            <ul class="search-input__list">
-                                <li><a href="javascript:void(0)">Навык 1</a></li>
-                                <li><a href="javascript:void(0)">Навык 2</a></li>
-                                <li><a href="javascript:void(0)">Навык 3</a></li>
-                                <li><a href="javascript:void(0)">Навык 4</a></li>
-                            </ul>
-                        </div>
-                       
+                    <div class="selectize-search selectize-search--another-border">
+                        <select class="js-selectize" placeholder="Начните писать категорию">
+                            <option value="" selected="selected"></option>
+                            <option>Навык 1</option>
+                            <option>Навык 2</option>
+                            <option>Навык 3</option>
+                            <option>Навык 4</option>
+                            <option>Навык 5</option>
+                            <option>Навык 6</option>
+                            <option>Навык 7</option>
+                            <option>Навык 8</option>
+                        </select>
                     </div>
                 </div>
                 <div class="filter__row">
                     <label class="filter__label">Навыки</label>
-                    <div class="search-input">
-                        <div class="search-input__input">
-                            <input class="input" type="text" placeholder="Начните писать навыки">
-                            <button type="button">
-                                <svg width="17.5px" height="17.5px">
-                                    <use xlink:href="./img/sprite.svg#search"></use>
-                                </svg>
-                            </button>
-                            <ul class="search-input__list">
-                                <li><a href="javascript:void(0)">Навык 1</a></li>
-                                <li><a href="javascript:void(0)">Навык 2</a></li>
-                                <li><a href="javascript:void(0)">Навык 3</a></li>
-                                <li><a href="javascript:void(0)">Навык 4</a></li>
-                            </ul>
-                        </div>
-                       
+                    <div class="selectize-search selectize-search--another-border">
+                        <select class="js-selectize" placeholder="Начните писать навыки">
+                            <option value="" selected="selected"></option>
+                            <option>Навык 1</option>
+                            <option>Навык 2</option>
+                            <option>Навык 3</option>
+                            <option>Навык 4</option>
+                            <option>Навык 5</option>
+                            <option>Навык 6</option>
+                            <option>Навык 7</option>
+                            <option>Навык 8</option>
+                        </select>
                     </div>
+                    
                 </div>
 
                 <div class="filter__row">
                     <label class="filter__label">Страна</label>
-                    <div class="custom-select">
+                    <div class="custom-select custom-select--another-border">
                         <select>
                             <option value="">Выберите страну</option>
                             <option value="1">Страна 1</option>
@@ -247,7 +240,7 @@
 
                 <div class="filter__row">
                     <label class="filter__label">Языки</label>
-                    <div class="custom-select">
+                    <div class="custom-select custom-select--another-border">
                         <select>
                             <option value="">Начните вводить язык</option>
                             <option>Язык 1</option>
@@ -270,24 +263,20 @@
             </div>
             <div class="proekt__right">
                 <div class="proekt__search">
-                    <div class="search-input">
-                        <div class="search-input__input">
-                            <input class="input" type="text" placeholder="Начните писать навыки">
-                            <button type="button">
-                                <svg width="17.5px" height="17.5px">
-                                    <use xlink:href="./img/sprite.svg#search"></use>
-                                </svg>
-                            </button>
-                            <ul class="search-input__list">
-                                <li><a href="javascript:void(0)">Навык 1</a></li>
-                                <li><a href="javascript:void(0)">Навык 2</a></li>
-                                <li><a href="javascript:void(0)">Навык 3</a></li>
-                                <li><a href="javascript:void(0)">Навык 4</a></li>
-                            </ul>
-                        </div>
-                       
-                        <div class="search__tags">
-                            <div class="search__tag">
+                    <div class="selectize-search selectize-search--another-border">
+                        <select class="js-selectize" placeholder="Начните писать категорию">
+                            <option value="" selected="selected"></option>
+                            <option>Навык 1</option>
+                            <option>Навык 2</option>
+                            <option>Навык 3</option>
+                            <option>Навык 4</option>
+                            <option>Навык 5</option>
+                            <option>Навык 6</option>
+                            <option>Навык 7</option>
+                            <option>Навык 8</option>
+                        </select>
+                        <div class="add-skills__tags">
+                            <div class="add-skills__tag">
                                 аналитика
                                 <button>
                                     <svg width="10px" height="10px">
@@ -295,7 +284,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="search__tag">
+                            <div class="add-skills__tag">
                                 продажи
                                 <button>
                                     <svg width="10px" height="10px">
@@ -305,6 +294,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 
                 <div class="proekt__detail">
@@ -330,11 +320,78 @@
                                 <div class="proekt__content__status">Заказчик </div>
                                 <div class="proekt__content__person">
                                     <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                    <div class="proekt__content__person__name">
+                                        Анастасия Александрова
+                                    </div>
+                                </div>
+                                <div class="proekt__tags">
+                                    <div class="proekt__tags__item">
+                                        <span class="">Оплата</span>
+                                        <span class="tags-point">
+                                            $30/час
+                                        </span>
+                                    </div>
+                                    <div class="proekt__tags__item">
+                                       
+                                        <span class="tags-point">
+                                            Топ-эксперт
+                                        </span>
+                                    </div>
+                                    <div class="proekt__tags__item">
+                                       
+                                        <span class="tags-point">
+                                            Юриспруденция
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="proekt__content__right">
-                                
+                                <div class="proekt__stat">
+                                    <div class="proekt__stat__status">Проект опубликован</div>
+                                    <div class="proekt__stat__item">
+                                        <img src="./img/proekt/thumbnail.png">
+                                        6 дней 23 часа назад
+                                    </div>
+                                    <div class="proekt__stat__item">
+                                        <img src="./img/proekt/thumbnail.png">
+                                        23 просмотра
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="proekt__content__text">
+                            Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut. Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque. Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+                        </div>
+                        <div class="proekt__content__tags">
+                            <div class="proekt__content__tags__item">
+                                design
+                            </div>
+                            <div class="proekt__content__tags__item">
+                                branding
+                            </div>
+                            <div class="proekt__content__tags__item">
+                                typography
+                            </div>
+                        </div>
+                        <div class="proekt__content__bot">
+                            <div class="proekt__location">
+                                <svg width="14" height="20">
+                                    <use xlink:href="./img/sprite.svg#location"></use>
+                                </svg>
+                                Украина. Киев
+                            </div>
+                            <div class="proekt__content__actions">
+                                <a href="" class="proekt__chat">
+                                    <svg width="14" height="20">
+                                        <use xlink:href="./img/sprite.svg#chat"></use>
+                                    </svg>
+                                    Чат с заказчиком
+                                </a>
+                                <a href="" class="btn btn-primary">Подать заявку на проект</a>
+                            </div>
+                        </div>
+                        <div class="proekt__more">
+                            <a href="" class="btn btn-primary">Все проекты этого заказчика</a>
                         </div>
                     </div>
                 </div>

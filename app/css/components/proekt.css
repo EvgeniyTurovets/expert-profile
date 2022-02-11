@@ -194,6 +194,10 @@
   display: flex;
 }
 
+.selectize-input.dropdown-active::before {
+  display: none;
+}
+
 .proekt__actios button {
   background: #FFFFFF;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
@@ -234,5 +238,120 @@
   line-height: 28px;
   color: #000000;
   margin-bottom: 4px;
+}
+
+.selectize-control.single .selectize-input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 0;
+  padding: 0 14px;
+  border: 1px solid #d7d6dc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/proekt/search.svg");
+  background-size: 17.5px;
+  background-position: left 19px center;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.selectize-control.single .selectize-input.dropdown-active {
+  border-radius: 20px 20px 0 0;
+  border: 2px solid #2b5cfb;
+  padding-left: 50px;
+}
+
+.selectize-input, .selectize-control.single .selectize-input.input-active {
+  display: flex;
+  background-color: #fff;
+}
+
+.selectize-input > input {
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.selectize-input > input::-moz-placeholder {
+  color: #AFACB9;
+}
+
+.selectize-input > input:-ms-input-placeholder {
+  color: #AFACB9;
+}
+
+.selectize-input > input::placeholder {
+  color: #AFACB9;
+}
+
+.selectize-input .item {
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.selectize-control.single .selectize-input.dropdown-active .item {
+  display: none;
+}
+
+.selectize-control.single .selectize-input:after {
+  border-color: #a1a4b1 transparent transparent transparent;
+}
+
+.selectize-dropdown {
+  background: #fff;
+  border: 1px solid #d7d6dc;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.selectize-control {
+  height: 48px;
+}
+
+.selectize-control.single .selectize-input:after {
+  display: none;
+}
+
+.selectize-dropdown [data-selectable] {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.selectize-dropdown [data-selectable] .highlight {
+  color: #000;
+  background-color: transparent;
+}
+
+.selectize-search {
+  position: relative;
+}
+
+.selectize-search--another-border .selectize-control.single .selectize-input {
+  border-radius: 10px;
+}
+.selectize-search--another-border .selectize-control.single .selectize-input.dropdown-active {
+  border-radius: 10px 10px 0 0;
+}
+
+.custom-select--another-border .select-selected {
+  border-radius: 10px;
+  border: 1px solid #d7d6dc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.custom-select--another-border .select-selected.select-arrow-active {
+  border-radius: 10px 10px 0px 0px;
 }
 /*# sourceMappingURL=proekt.css.map */

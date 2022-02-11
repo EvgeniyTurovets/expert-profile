@@ -24,5 +24,6 @@ $(function () {
   $('.search-input input').on('blur', function () {
     $(this).closest('.search-input').removeClass('focus');
   });
+  $(".js-selectize").selectize();
 });
 //# sourceMappingURL=main.js.map

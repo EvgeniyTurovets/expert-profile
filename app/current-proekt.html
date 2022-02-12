@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#F1F6FA">
+  <title>New site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="app">
+    <header class="header">
+	<div class="wrap">
+		<div class="header__wrap">
+			<div class="header__left">
+				<a href="" class="header__logo">
+					<img src="./img/header/logo.svg">
+					ExpertLand
+				</a>
+
+				<form class="header__search">
+					<input type="text" placeholder="Найти работу">
+					<button type="button">
+						<svg width="17.5px" height="17.5px">
+							<use xlink:href="./img/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+			<div class="header__right">
+				<button type="button" class="header__right__btn header__right__btn--search" id="open-search">
+					<svg width="20px" height="20px" class="open">
+						<use xlink:href="./img/sprite.svg#search"></use>
+					</svg>
+					<svg width="20px" height="20px" class="close">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</button>
+				<a href="" class="header__right__btn">
+					<svg width="20px" height="20px">
+						<use xlink:href="./img/sprite.svg#mess"></use>
+					</svg>
+				</a>
+				<a href="" class="header__right__btn">
+					<svg width="20px" height="20px">
+						<use xlink:href="./img/sprite.svg#notific"></use>
+					</svg>
+				</a>
+				<a href="" class="header__right__btn">
+					<svg width="20px" height="20px">
+						<use xlink:href="./img/sprite.svg#settings"></use>
+					</svg>
+				</a>
+				<div class="person">
+					<button class="person__menu" type="button" id="person__menu__btn">
+						<div class="avatar">
+							<img width="48px" height="48px" src="./img/header/avatar.jpg">
+						</div>
+						<div class="person__menu__v">
+							<svg width="14px" height="7px">
+								<use xlink:href="./img/sprite.svg#v"></use>
+							</svg>
+						</div>
+					</button>
+					<nav class="person__nav">
+						<ul>
+							<li>
+								<a href="">Редактировать Профиль</a>
+							</li>
+							<li>
+								<a href="">Способ Оплаты</a>
+							</li>
+							<li>
+								<a href="">Переключить на аккаунт заказчика</a>
+							</li>
+						</ul>
+						<div class="person__nav__line"></div>
+						<ul>
+							<li>
+								<a href="">Помощь</a>
+							</li>
+							<li>
+								<a href="">Выход</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</header>
+
+
+    <main class="main">
+      <div class="sub-header">
+    <div class="wrap">
+      <nav class="sub-header__nav">
+        <ul>
+          <li>
+            <a href="" class="active">Найти проект</a>
+          </li>
+          <li>
+            <a href="">Текущие проекты</a>
+          </li>
+          <li>
+            <a href="">Статистика</a>
+          </li>
+          <li>
+            <a href="">Оплата</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+      
+      <div class="wrap">
+        <div class="status">
+    <div class="status__left">
+        Статус профиля
+        <div class="status__type">
+            <img src="./img/about/type.png">
+            Не активный
+        </div>
+    </div>
+    <div class="status__right">
+        Видимость профиля
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Доступен всем</label>
+          </div>
+    </div>
+</div>
+
+        <div class="exp-content">
+            <div class="exp-content__sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                        <div class="sidebar__name">Александр Александров</div>
+                    </div>
+                   
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__nav__menu1">
+                            <li>
+                                <a href="">Просмотр профиля</a>
+                            </li>
+                            <li>
+                                <a href="">Пройти отбор</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">Редактировать профиль</a>
+                            </li>
+                            <li class="active">
+                                <a href="">Контактная информация
+                                    <svg width="24px" height="24px" class="open">
+                                        <use xlink:href="./img/sprite.svg#edit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Резюме</a>
+                            </li>
+                            <li>
+                                <a href="">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="">Личная информация </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="exp-content__blocks">
+                <div class="exp-content__edit">
+                    <div class="exp-content__top">
+                        Мои проекты
+                    </div>
+    
+                    <div class="proekt__tabs">
+                        <ul>
+                            <li>
+                                <a href="" class="active">
+                                    Текущие (2)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Выполненные
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-proekts-filter">
+                        <form class="my-proekts-filter__search">
+                            <input type="text" placeholder="Поиск проекта">
+                            <button type="button">
+                                <svg width="17.5px" height="17.5px">
+                                    <use xlink:href="./img/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="my-proekts-filter__wrap">
+                            <div class="my-proekts-filter__item">
+                                Фильтровать по: 
+                                <div class="custom-select">
+                                    <select class="">
+                                        <option></option>
+                                        <option selected>Все проекты</option>
+                                        <option>Не все проекты</option> 
+                                        <option>Не проекты</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="my-proekts-filter__item">
+                                Фильтровать по: 
+                                <div class="custom-select">
+                                    <select class="">
+                                        <option></option>
+                                        <option selected>Дата</option>
+                                        <option>Сначала новые</option> 
+                                        <option>Сначала старые</option> 
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-proekts-list">
+                        <div class="my-proekts-list__item">
+                            <div class="data">Дизайн <span>05.05.2021</span></div>
+                            <a href="" class="title">Дизайн логотипа для сайта</a>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="detail">
+                                <a href="">
+                                    Детальнее
+                                    <svg width="44" height="16">
+                                        <use xlink:href="./img/sprite.svg#detail"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-proekts-list__item">
+                            <div class="data">Дизайн <span>05.05.2021</span></div>
+                            <a href="" class="title">Дизайн логотипа для сайта</a>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="detail">
+                                <a href="">
+                                    Детальнее
+                                    <svg width="44" height="16">
+                                        <use xlink:href="./img/sprite.svg#detail"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-content__edit">
+                    <div class="exp-content__top">
+                        Мои заявки
+                    </div>
+    
+                    <div class="proekt__tabs">
+                        <ul>
+                            <li>
+                                <a href="" class="active">
+                                    Все заявки (0)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Избранные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Отклоненные
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-proekts-list proekt__list">
+                        <div class="proekt__content">
+                            <div class="proekt__content__wrap">
+                                <div class="proekt__list__item">
+                                    <div class="proekt__content__top">
+                                        <div class="proekt__content__left">
+                                        
+                                            <div class="proekt__content__person proekt__content__person--list">
+                                                <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                                <div class="proekt__content__person__right">
+                                                    <a href="" class="proekt__content__person__name">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    </a>
+                                                    <div class="proekt__tags">
+                                                        <div class="proekt__tags__item">
+                                                            <span class="">Оплата</span>
+                                                            <span class="tags-point">
+                                                                $30/час
+                                                            </span>
+                                                        </div>
+                                                        <div class="proekt__tags__item">
+                                                        
+                                                            <span class="tags-point">
+                                                                Топ-эксперт
+                                                            </span>
+                                                        </div>
+                                                        <div class="proekt__tags__item">
+                                                        
+                                                            <span class="tags-point">
+                                                                Юриспруденция
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="proekt__content__text">
+                                        Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut. Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque. Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+                                    </div>
+                                    <div class="proekt__content__tags">
+                                        <div class="proekt__content__tags__item">
+                                            design
+                                        </div>
+                                        <div class="proekt__content__tags__item">
+                                            branding
+                                        </div>
+                                        <div class="proekt__content__tags__item">
+                                            typography
+                                        </div>
+                                    </div>
+                                    <div class="proekt__content__bot">
+                                        <div class="proekt__location">
+                                            <svg width="14" height="20">
+                                                <use xlink:href="./img/sprite.svg#location"></use>
+                                            </svg>
+                                            Украина. Киев
+                                        </div>
+                                        <div class="proekt__content__actions">
+                                            <a href="" class="proekt__chat">
+                                                Детальнее
+                                                <svg width="44" height="21">
+                                                    <use xlink:href="./img/sprite.svg#detail"></use>
+                                                </svg>
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="proekt__list__item">
+                                    <div class="proekt__content__top">
+                                        <div class="proekt__content__left">
+                                        
+                                            <div class="proekt__content__person proekt__content__person--list">
+                                                <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                                <div class="proekt__content__person__right">
+                                                    <a href="" class="proekt__content__person__name">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    </a>
+                                                    <div class="proekt__tags">
+                                                        <div class="proekt__tags__item">
+                                                            <span class="">Оплата</span>
+                                                            <span class="tags-point">
+                                                                $30/час
+                                                            </span>
+                                                        </div>
+                                                        <div class="proekt__tags__item">
+                                                        
+                                                            <span class="tags-point">
+                                                                Топ-эксперт
+                                                            </span>
+                                                        </div>
+                                                        <div class="proekt__tags__item">
+                                                        
+                                                            <span class="tags-point">
+                                                                Юриспруденция
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="proekt__content__text">
+                                        Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut. Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque. Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+                                    </div>
+                                    <div class="proekt__content__tags">
+                                        <div class="proekt__content__tags__item">
+                                            design
+                                        </div>
+                                        <div class="proekt__content__tags__item">
+                                            branding
+                                        </div>
+                                        <div class="proekt__content__tags__item">
+                                            typography
+                                        </div>
+                                    </div>
+                                    <div class="proekt__content__bot">
+                                        <div class="proekt__location">
+                                            <svg width="14" height="20">
+                                                <use xlink:href="./img/sprite.svg#location"></use>
+                                            </svg>
+                                            Украина. Киев
+                                        </div>
+                                        <div class="proekt__content__actions">
+                                            <a href="" class="proekt__chat">
+                                                Детальнее
+                                                <svg width="44" height="21">
+                                                    <use xlink:href="./img/sprite.svg#detail"></use>
+                                                </svg>
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proekt__more">
+                                <a href="" class="btn btn-primary">Загрузить больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="exp-content__edit">
+                    <div class="exp-content__top">
+                        Мои конкурсы
+                    </div>
+    
+                    <div class="proekt__tabs">
+                        <ul>
+                            <li>
+                                <a href="" class="active">
+                                    Все заявки (0)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Избранные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Отклоненные
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="now-proekt__empty">
+                        У вас еще нет заявок на проекты.<br>
+                        <a href="">Найдите прект</a> и подайте заявку или <a href="">следите</a> за поектами на которые вы подавали заявку.
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </main>
+    
+    <footer class="footer">
+    <div class="wrap">
+        <div class="footer__wrap">
+            <div class="footer__left">
+                <a href="">
+                    <img src="./img/header/logo-f.svg">
+                </a>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__right__nav">
+                    <div class="f-col">
+                        <div class="title">Условия</div>
+                        <ul>
+                            <li>
+                                <a href="">Управление проектом</a>
+                            </li>
+                            <li>
+                                <a href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="">Условия использования</a>
+                            </li>
+                            <li>
+                                <a href="">Политика конфиденциальности</a>
+                            </li>
+                            <li>
+                                <a href="">Безопасность и защита платежей</a>
+                            </li>
+                            <li>
+                                <a href="">Помощь</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f-col">
+                        <div class="title">Компания</div>
+                        <ul>
+                            <li>
+                                <a href="">О нас</a>
+                            </li>
+                            <li>
+                                <a href="">Наша миссия</a>
+                            </li>
+                            <li>
+                                <a href="">Контакты</a>
+                            </li>
+                            <li class="last-li">
+                                <a href="">Служба поддержки</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__wrap__bot">
+            <div class="footer__copy">
+                © Expertland, Inc. 2022. We love our users!
+            </div>
+
+            <div class="footer__soc">
+                <div class="footer__soc__text">
+                    Мы в соц сетях:
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <svg width="25px" height="25px">
+								<use xlink:href="./img/sprite.svg#linkedin"></use>
+							</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="35px" height="35px" style="margin-top: 10px">
+								<use xlink:href="./img/sprite.svg#fb"></use>
+							</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="35px" height="35px">
+								<use xlink:href="./img/sprite.svg#inst"></use>
+							</svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+
+  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

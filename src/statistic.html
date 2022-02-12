@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#F1F6FA">
+  <title>New site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="app">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/sub-header.html')
+      
+      <div class="wrap">
+        @include('partials/status.html')
+
+        <div class="exp-content">
+            <div class="exp-content__sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                        <div class="sidebar__name">Александр Александров</div>
+                    </div>
+                   
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__nav__menu1">
+                            <li>
+                                <a href="">Просмотр профиля</a>
+                            </li>
+                            <li>
+                                <a href="">Пройти отбор</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">Редактировать профиль</a>
+                            </li>
+                            <li class="active">
+                                <a href="">Контактная информация
+                                    <svg width="24px" height="24px" class="open">
+                                        <use xlink:href="./img/sprite.svg#edit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Резюме</a>
+                            </li>
+                            <li>
+                                <a href="">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="">Личная информация </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="exp-content__blocks">
+                <div class="exp-content__edit">
+                    <div class="exp-content__top">
+                        Статистика профиля
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="proekt__tabs">
+                            <ul>
+                                <li>
+                                    <a href="" class="active">
+                                        Просмотры профиля
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Конверсия профиля
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Рейтинг профиля
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="stat__blocks">
+                            <div class="stat__blocks__top">
+                                <a href="" class="active">
+                                    Последние 30 дней
+                                </a>
+                                <a href="">
+                                    За год
+                                </a>
+                                <a href="">
+                                    За всё время
+                                </a>
+                            </div>
+                            <div class="stat__content">
+                                <div class="stat__chart">
+                                    <div class="stat__chart__item">
+                                        Заполненность профиля
+                                        <div class="stat__chart__cifra">
+                                            150
+                                        </div>
+                                        <div class="stat__chart__line">
+                                            <div class="stat__chart__line2" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat__chart__item">
+                                        Работы в портфолио
+                                        <div class="stat__chart__cifra">
+                                            50
+                                        </div>
+                                        <div class="stat__chart__line">
+                                            <div class="stat__chart__line2" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stat__chart__item">
+                                        Другие факторы
+                                        <div class="stat__chart__cifra">
+                                            100
+                                        </div>
+                                        <div class="stat__chart__line">
+                                            <div class="stat__chart__line2" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat__detail">
+                                <a href="">
+                                    Перейти к работам
+                                    <svg width="44" height="16">
+                                        <use xlink:href="./img/sprite.svg#detail"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stat__blocks">
+                            <div class="stat__blocks__top">
+                                <a href="" class="active">
+                                    Последние 30 дней
+                                </a>
+                                <a href="">
+                                    За год
+                                </a>
+                                <a href="">
+                                    За всё время
+                                </a>
+                            </div>
+                            <div class="stat__content">
+                                <ul class="stat__list">
+                                    <li>    
+                                        <div class="stat__list__text">
+                                            <span>23</span>     Всего работ 
+                                        </div>
+                                    </li>
+                                    <li>    
+                                        <div class="stat__list__text">
+                                            <span>20</span> Выполненных  
+                                        </div>
+                                    </li>
+                                    <li>    
+                                        <div class="stat__list__text">
+                                            <span>1674$</span> Заработано   
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="stat__detail">
+                                <a href="">
+                                    Перейти к работам
+                                    <svg width="44" height="16">
+                                        <use xlink:href="./img/sprite.svg#detail"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stat__blocks">
+                            <div class="stat__blocks__top">
+                                <a href="" class="active">
+                                    Последние 30 дней
+                                </a>
+                                <a href="">
+                                    За год
+                                </a>
+                                <a href="">
+                                    За всё время
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </main>
+    
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

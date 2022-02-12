@@ -25,5 +25,11 @@ $(function () {
     $(this).closest('.search-input').removeClass('focus');
   });
   $(".js-selectize").selectize();
+  $('.filter__title').on('click', function () {
+    if ($(window).width() < 992) {
+      $(this).toggleClass('active');
+      $('.filter__content').slideToggle();
+    }
+  });
 });
 //# sourceMappingURL=main.js.map

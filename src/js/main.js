@@ -30,5 +30,12 @@ $(function(){
     })
 
     $(".js-selectize").selectize()
+
+    $('.filter__title').on('click', function(){
+        if($(window).width() < 992){
+            $(this).toggleClass('active')
+            $('.filter__content').slideToggle()
+        }
+    })
 })
 

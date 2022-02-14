@@ -31,5 +31,18 @@ $(function () {
       $('.filter__content').slideToggle();
     }
   });
+  $('.exp-profile__rate').on('mouseenter', function () {
+    $(this).addClass('active');
+  });
+  $('.exp-profile__rate .tooltips').on('mouseleave', function () {
+    $(this).closest('.exp-profile__rate').removeClass('active');
+  });
+  $('.exp-profile__tabs__nav li').on('click', function () {
+    var index = $(this).index();
+    $('.exp-profile__tabs__nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.exp-profile__tabs__content').removeClass('active');
+    $('.exp-profile__tabs__content').eq(index).addClass('active');
+  });
 });
 //# sourceMappingURL=main.js.map

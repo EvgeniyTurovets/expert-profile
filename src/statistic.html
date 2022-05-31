@@ -73,171 +73,441 @@
                     </div>
                     
                     <div class="stat">
-                        <div class="proekt__tabs">
+                        <div class="proekt__tabs tabs-nav" data-tabs="#stat-tabs">
                             <ul>
                                 <li>
-                                    <a href="" class="active">
+                                    <a href="javascript:" data-tabs-item="0" class="active">
                                         Просмотры профиля
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="javascript:" data-tabs-item="1">
                                         Конверсия профиля
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="javascript:" data-tabs-item="2">
                                         Рейтинг профиля
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="stat__blocks">
-                            <div class="stat__blocks__top">
-                                <a href="" class="active">
-                                    Последние 30 дней
-                                </a>
-                                <a href="">
-                                    За год
-                                </a>
-                                <a href="">
-                                    За всё время
-                                </a>
-                            </div>
-                            <div class="stat__content">
-                                <div class="stat__chart">
-                                    <div class="stat__chart__item">
-                                        Заполненность профиля
-                                        <div class="stat__chart__cifra">
-                                            150
-                                        </div>
-                                        <div class="stat__chart__line">
-                                            <div class="stat__chart__line2" style="width: 50%"></div>
+                        <div class="tabs" id="stat-tabs">
+                            <div class="tabs__item">
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__content">
+                                        <div class="stat__chart">
+                                            <div class="stat__list__text">
+                                                <span>0</span> Просмотров профиля за последние 30 дней 
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="stat__chart__item">
-                                        Работы в портфолио
-                                        <div class="stat__chart__cifra">
-                                            50
+                                    
+                                </div>
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__content">
+                                        <ul class="stat__list">
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>23</span>     Всего работ 
+                                                </div>
+                                            </li>
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>20</span> Выполненных  
+                                                </div>
+                                            </li>
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>1674$</span> Заработано   
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__rate stat__rate--line ">
+                                        <div class="stat__rate__text">
+                                            Рейтинг <span>5500</span>
                                         </div>
-                                        <div class="stat__chart__line">
-                                            <div class="stat__chart__line2" style="width: 50%"></div>
+                                        <div class="stat__rate__line tooltips-wrap">
+                                            <div class="stat__rate__line2" style="width: 60%">
+                                                <span>5500</span>
+                                            </div>
+                                            <div class="tooltips">
+                                                Как расчитывается рейтинг
+                                            </div>
+                                        </div>
+        
+                                        
+                                    </div>
+                                </div>
+                                <div class="stat__blocks">
+                                    
+                                    <div class="stat__rate">
+                                        <div class="stat__rate__text">
+                                            Отзывы <span>2,5</span>
+                                        </div>
+                                        <div class="stat__rate__star">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-active"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-active"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-half"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-notactive"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-notactive"></use>
+                                            </svg>
                                         </div>
                                     </div>
-                                    <div class="stat__chart__item">
-                                        Другие факторы
-                                        <div class="stat__chart__cifra">
-                                            100
-                                        </div>
-                                        <div class="stat__chart__line">
-                                            <div class="stat__chart__line2" style="width: 50%"></div>
-                                        </div>
+                                    <div class="stat__detail">
+                                        <a href="">
+                                            Смотреть все отзывы
+                                            <svg width="44" height="16">
+                                                <use xlink:href="./img/sprite.svg#detail"></use>
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="stat__detail">
-                                <a href="">
-                                    Перейти к работам
-                                    <svg width="44" height="16">
-                                        <use xlink:href="./img/sprite.svg#detail"></use>
-                                    </svg>
-                                </a>
+                            <div class="tabs__item">
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__content">
+                                        <div class="stat__chart">
+                                            <div class="stat__chart__item">
+                                                Заполненность профиля
+                                                <div class="stat__chart__cifra">
+                                                    150
+                                                </div>
+                                                <div class="stat__chart__line">
+                                                    <div class="stat__chart__line2" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="stat__chart__item">
+                                                Работы в портфолио
+                                                <div class="stat__chart__cifra">
+                                                    50
+                                                </div>
+                                                <div class="stat__chart__line">
+                                                    <div class="stat__chart__line2" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="stat__chart__item">
+                                                Другие факторы
+                                                <div class="stat__chart__cifra">
+                                                    100
+                                                </div>
+                                                <div class="stat__chart__line">
+                                                    <div class="stat__chart__line2" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stat__detail">
+                                        <a href="">
+                                            Перейти к работам
+                                            <svg width="44" height="16">
+                                                <use xlink:href="./img/sprite.svg#detail"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__content">
+                                        <ul class="stat__list">
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>23</span>     Всего работ 
+                                                </div>
+                                            </li>
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>20</span> Выполненных  
+                                                </div>
+                                            </li>
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>1674$</span> Заработано   
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__rate stat__rate--line ">
+                                        <div class="stat__rate__text">
+                                            Рейтинг <span>5500</span>
+                                        </div>
+                                        <div class="stat__rate__line tooltips-wrap">
+                                            <div class="stat__rate__line2" style="width: 60%">
+                                                <span>5500</span>
+                                            </div>
+                                            <div class="tooltips">
+                                                Как расчитывается рейтинг
+                                            </div>
+                                        </div>
+        
+                                        
+                                    </div>
+                                </div>
+                                <div class="stat__blocks">
+                                    
+                                    <div class="stat__rate">
+                                        <div class="stat__rate__text">
+                                            Отзывы <span>2,5</span>
+                                        </div>
+                                        <div class="stat__rate__star">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-active"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-active"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-half"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-notactive"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-notactive"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="stat__detail">
+                                        <a href="">
+                                            Смотреть все отзывы
+                                            <svg width="44" height="16">
+                                                <use xlink:href="./img/sprite.svg#detail"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__item">
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__content">
+                                        <div class="stat__chart">
+                                            <div class="stat__chart__item">
+                                                Заполненность профиля
+                                                <div class="stat__chart__cifra">
+                                                    150
+                                                </div>
+                                                <div class="stat__chart__line">
+                                                    <div class="stat__chart__line2" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="stat__chart__item">
+                                                Работы в портфолио
+                                                <div class="stat__chart__cifra">
+                                                    50
+                                                </div>
+                                                <div class="stat__chart__line">
+                                                    <div class="stat__chart__line2" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="stat__chart__item">
+                                                Другие факторы
+                                                <div class="stat__chart__cifra">
+                                                    100
+                                                </div>
+                                                <div class="stat__chart__line">
+                                                    <div class="stat__chart__line2" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stat__detail">
+                                        <a href="">
+                                            Перейти к работам
+                                            <svg width="44" height="16">
+                                                <use xlink:href="./img/sprite.svg#detail"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__content">
+                                        <ul class="stat__list">
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>23</span>     Всего работ 
+                                                </div>
+                                            </li>
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>20</span> Выполненных  
+                                                </div>
+                                            </li>
+                                            <li>    
+                                                <div class="stat__list__text">
+                                                    <span>1674$</span> Заработано   
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="stat__blocks">
+                                    <div class="stat__blocks__top">
+                                        <a href="" class="active">
+                                            Последние 30 дней
+                                        </a>
+                                        <a href="">
+                                            За год
+                                        </a>
+                                        <a href="">
+                                            За всё время
+                                        </a>
+                                    </div>
+                                    <div class="stat__rate stat__rate--line ">
+                                        <div class="stat__rate__text">
+                                            Рейтинг <span>5500</span>
+                                        </div>
+                                        <div class="stat__rate__line tooltips-wrap">
+                                            <div class="stat__rate__line2" style="width: 60%">
+                                                <span>5500</span>
+                                            </div>
+                                            <div class="tooltips">
+                                                Как расчитывается рейтинг
+                                            </div>
+                                        </div>
+        
+                                        
+                                    </div>
+                                </div>
+                                <div class="stat__blocks">
+                                    
+                                    <div class="stat__rate">
+                                        <div class="stat__rate__text">
+                                            Отзывы <span>2,5</span>
+                                        </div>
+                                        <div class="stat__rate__star">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-active"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-active"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-half"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-notactive"></use>
+                                            </svg>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="./img/sprite.svg#star-notactive"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="stat__detail">
+                                        <a href="">
+                                            Смотреть все отзывы
+                                            <svg width="44" height="16">
+                                                <use xlink:href="./img/sprite.svg#detail"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="stat__blocks">
-                            <div class="stat__blocks__top">
-                                <a href="" class="active">
-                                    Последние 30 дней
-                                </a>
-                                <a href="">
-                                    За год
-                                </a>
-                                <a href="">
-                                    За всё время
-                                </a>
-                            </div>
-                            <div class="stat__content">
-                                <ul class="stat__list">
-                                    <li>    
-                                        <div class="stat__list__text">
-                                            <span>23</span>     Всего работ 
-                                        </div>
-                                    </li>
-                                    <li>    
-                                        <div class="stat__list__text">
-                                            <span>20</span> Выполненных  
-                                        </div>
-                                    </li>
-                                    <li>    
-                                        <div class="stat__list__text">
-                                            <span>1674$</span> Заработано   
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        <div class="stat__blocks">
-                            <div class="stat__blocks__top">
-                                <a href="" class="active">
-                                    Последние 30 дней
-                                </a>
-                                <a href="">
-                                    За год
-                                </a>
-                                <a href="">
-                                    За всё время
-                                </a>
-                            </div>
-                            <div class="stat__rate stat__rate--line ">
-                                <div class="stat__rate__text">
-                                    Рейтинг <span>5500</span>
-                                </div>
-                                <div class="stat__rate__line tooltips-wrap">
-                                    <div class="stat__rate__line2" style="width: 60%">
-                                        <span>5500</span>
-                                    </div>
-                                    <div class="tooltips">
-                                        Как расчитывается рейтинг
-                                    </div>
-                                </div>
-
-                                
-                            </div>
-                        </div>
-                        <div class="stat__blocks">
-                            
-                            <div class="stat__rate">
-                                <div class="stat__rate__text">
-                                    Отзывы <span>2,5</span>
-                                </div>
-                                <div class="stat__rate__star">
-                                    <svg width="20px" height="20px">
-                                        <use xlink:href="./img/sprite.svg#star-active"></use>
-                                    </svg>
-                                    <svg width="20px" height="20px">
-                                        <use xlink:href="./img/sprite.svg#star-active"></use>
-                                    </svg>
-                                    <svg width="20px" height="20px">
-                                        <use xlink:href="./img/sprite.svg#star-half"></use>
-                                    </svg>
-                                    <svg width="20px" height="20px">
-                                        <use xlink:href="./img/sprite.svg#star-notactive"></use>
-                                    </svg>
-                                    <svg width="20px" height="20px">
-                                        <use xlink:href="./img/sprite.svg#star-notactive"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="stat__detail">
-                                <a href="">
-                                    Смотреть все отзывы
-                                    <svg width="44" height="16">
-                                        <use xlink:href="./img/sprite.svg#detail"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -249,7 +519,8 @@
     @include('partials/footer.html')
   </div>
 
-  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

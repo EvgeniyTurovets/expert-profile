@@ -193,6 +193,10 @@
   margin-left: 15px;
   display: flex;
 }
+.proekt__actios svg {
+  min-width: 13.2px;
+  min-height: 13.2px;
+}
 
 .selectize-input.dropdown-active::before {
   display: none;

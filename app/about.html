@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -44,10 +45,22 @@
 						<use xlink:href="./img/sprite.svg#close"></use>
 					</svg>
 				</button>
-				<a href="" class="header__right__btn">
+				<!-- <a href="" class="header__right__btn">
 					<svg width="20px" height="20px">
 						<use xlink:href="./img/sprite.svg#mess"></use>
 					</svg>
+				</a> -->
+				<a href="" class="header__right__btn have-mess tooltips-wrap">
+					<svg width="20px" height="20px">
+						<use xlink:href="./img/sprite.svg#mess-active"></use>
+					</svg>
+					<div class="have-mess__text">
+						+1
+					</div>
+
+					<div class="tooltips">
+						1 новое сообщение
+					</div>
 				</a>
 				<a href="" class="header__right__btn">
 					<svg width="20px" height="20px">
@@ -126,9 +139,13 @@
         <div class="status">
     <div class="status__left">
         Статус профиля
-        <div class="status__type">
+        <div class="status__type tooltips-wrap">
             <img src="./img/about/type.png">
             Не активный
+
+            <div class="tooltips">
+                Чтобы активировать профиль необходимо <a href="">пройти отбор</a>
+            </div>
         </div>
     </div>
     <div class="status__right">
@@ -514,7 +531,8 @@
 </footer>
   </div>
 
-  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

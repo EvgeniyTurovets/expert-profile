@@ -33,9 +33,20 @@ body{
     .wrap{
         padding: 0 15px;
     }
-    
+}
+.btn-outline-primary{
+    border: 1px solid #D7D6DC;
+}
+.tabs__item{
+    display: none;
+}
+.tabs__item:first-child{
+    display: block;
 }
 
+.tabs__item.active{
+    display: block;
+}
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/footer";
@@ -45,3 +56,4 @@ body{
 @import "./components/proekt";
 @import "./components/statistic";
 @import "./components/profile";
+@import "./components/application";

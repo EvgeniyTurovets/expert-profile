@@ -44,10 +44,22 @@
 						<use xlink:href="./img/sprite.svg#close"></use>
 					</svg>
 				</button>
-				<a href="" class="header__right__btn">
+				<!-- <a href="" class="header__right__btn">
 					<svg width="20px" height="20px">
 						<use xlink:href="./img/sprite.svg#mess"></use>
 					</svg>
+				</a> -->
+				<a href="" class="header__right__btn have-mess tooltips-wrap">
+					<svg width="20px" height="20px">
+						<use xlink:href="./img/sprite.svg#mess-active"></use>
+					</svg>
+					<div class="have-mess__text">
+						+1
+					</div>
+
+					<div class="tooltips">
+						1 новое сообщение
+					</div>
 				</a>
 				<a href="" class="header__right__btn">
 					<svg width="20px" height="20px">
@@ -569,7 +581,8 @@
 </footer>
   </div>
   
-  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

@@ -52,5 +52,36 @@ $(function(){
         $('.exp-profile__tabs__content').removeClass('active')
         $('.exp-profile__tabs__content').eq(index).addClass('active')
     })
+
+    $('.tabs-nav li a').on('click', function(){
+        if(!$(this).hasClass('active')){
+            $(this).closest('.tabs-nav').find('a').removeClass('active')
+            $(this).addClass('active')
+
+            let itemIndex = $(this).attr('data-tabs-item')
+            let tabsId = $(this).closest('.tabs-nav').attr('data-tabs')
+
+            changeTabs(tabsId, itemIndex)
+        }
+    })
+
+    function changeTabs (tabsid, itemIndex) {
+        $(tabsid).find('.tabs__item').hide()
+        $(tabsid).find('.tabs__item').eq(itemIndex).fadeIn(300)
+    }
+
+    $('#inputfile').on('change', function(){
+        let file = $("#inputfile")[0].files[0]; 
+        $(this).closest('.app__file').addClass('active')
+        $('#filename').text(file.name)
+    })
+
+    $('.app__file').on('dragover', function(){
+        $(this).addClass('hover')
+    })
+
+    $('.app__file').on('dragleave', function(){
+        $(this).removeClass('hover')
+    })
 })
 

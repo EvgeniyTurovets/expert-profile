@@ -1,0 +1,200 @@
+.exp-content__top__mess{
+    display: flex;
+    justify-content: space-between;
+    a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+}
+
+.proekt__content__bot__app{
+    display: flex;
+    justify-content: flex-start;
+}
+.proekt__label{
+    display: flex;
+    margin-right: 40px;
+    svg{
+        margin-right: 15px;
+    }
+}
+.app__item{
+    margin-bottom: 45px;
+    .proekt__content__person__name{
+        font-weight: bold;
+    }
+    .proekt__content__text{
+        margin-bottom: 0;
+    }
+    .proekt__content__left{
+        padding: 0;
+    }
+}
+
+.app__item__data{
+    text-align: right;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.app__mess{
+    display: flex;
+    align-items: flex-start;
+}
+.proekt__tags{
+    .app__item__data{
+        flex: 1;
+    }
+}
+.app__mess__right{
+    flex: 1;
+}
+
+.app__messAction{
+    padding-left: 60px;
+}
+.app__dogovor{
+    .form-check{
+        margin-bottom: 30px;
+    }
+}
+.app__dogovor__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    .red{
+        color: red
+    }
+}
+
+.app__mess__text a:hover{
+    text-decoration: underline;
+}
+.form-check a:hover{
+    text-decoration: underline;
+}
+.app__dogovor__text a:hover{
+    text-decoration: underline;
+}
+.app__sendMess{
+    max-width: 630px;
+}
+
+.app__sendMess__bot{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 65px;
+    .app__file{
+        margin-left: 10px;
+    }
+}
+
+.app__file{
+    max-width: 400px;
+    padding: 1px;
+    border: 1px dashed transparent;
+    min-height: 45px;
+    position: relative;
+    input{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+}
+.app__file.hover{
+    border: 1px dashed #0d6efd
+}
+.app__file:hover{
+    border: 1px dashed #0d6efd
+}
+.app__file__wrap{
+    display: flex;
+    align-items: flex-start;
+    svg{
+        min-width: 24px;
+        margin-right: 5px;
+    }
+}
+.app__file{
+    cursor: pointer;   
+}
+.filename{
+    display: none;
+}
+.app__file.active{
+    .filename{
+        display: block;
+    }
+    .filePlaceholder{
+        display: none;
+    }
+}
+
+.arbitrage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    a{
+        color: red;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .tooltips{
+        width: 485px;
+        max-width: 90vw;
+    }
+    .tooltips:before{
+        left: 50%;
+    }
+} 
+
+@media(max-width: 991px){
+    .proekt__content__app{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .app__messAction{
+        padding-left: 0;
+    }
+    .app__file__wrap{
+        font-size: 10px;
+    }
+    .app__file{
+        max-width: 200px;
+    }
+    .proekt__content__app{
+        .proekt__actios{
+            margin-top: 0;
+        }
+        .proekt__content__top{
+            margin-bottom: 10px;
+        }
+        .proekt__content__text{
+            font-size: 12px;
+        }
+        .app__item__data{
+            font-size: 12px;
+        }
+    }
+
+    .app__dogovor__text{
+        font-size: 12px;
+    }
+    
+}

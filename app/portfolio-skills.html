@@ -44,10 +44,22 @@
 						<use xlink:href="./img/sprite.svg#close"></use>
 					</svg>
 				</button>
-				<a href="" class="header__right__btn">
+				<!-- <a href="" class="header__right__btn">
 					<svg width="20px" height="20px">
 						<use xlink:href="./img/sprite.svg#mess"></use>
 					</svg>
+				</a> -->
+				<a href="" class="header__right__btn have-mess tooltips-wrap">
+					<svg width="20px" height="20px">
+						<use xlink:href="./img/sprite.svg#mess-active"></use>
+					</svg>
+					<div class="have-mess__text">
+						+1
+					</div>
+
+					<div class="tooltips">
+						1 новое сообщение
+					</div>
 				</a>
 				<a href="" class="header__right__btn">
 					<svg width="20px" height="20px">
@@ -126,9 +138,13 @@
         <div class="status">
     <div class="status__left">
         Статус профиля
-        <div class="status__type">
+        <div class="status__type tooltips-wrap">
             <img src="./img/about/type.png">
             Не активный
+
+            <div class="tooltips">
+                Чтобы активировать профиль необходимо <a href="">пройти отбор</a>
+            </div>
         </div>
     </div>
     <div class="status__right">
@@ -187,6 +203,19 @@
                 </div>
 
                 <div class="exp-content__skills">
+                    <div class="exp-content__title">
+                        <h3>
+                            Добавить портфолио
+                        </h3>
+                    </div>
+
+                    <div class="exp-content__wrap exp-content__wrap__addPortfilio">
+                        <div class="">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#addPortfolioModal">Добавить портфолио</button>
+                        </div>
+                    </div>
+
+
                     <div class="exp-content__title">
                         <h3>
                             Добавить навыки
@@ -293,6 +322,57 @@
       </div>
     </main>
     
+    <div class="exp-modal modal fade" tabindex="-1" id="addPortfolioModal" aria-labelledby="addPortfolioModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Добавление портфолио</h5>
+            </div>
+         
+            <div class="exp-modal__addProect">
+                <form class="exp-modal__addProect__wrap">
+                    <label class="label">Название проекта</label>
+                    <input class="input" placeholder="Введите название проекта" type="text">
+                    <div class="upload-wrap">
+                        <label class="upload-wrap__col">
+                            <img src="./img/resume/1.png">
+                            <div class="upload-wrap__text">Загрузить изображение</div>
+                            <input type="file">
+                        </label>
+                        <label class="upload-wrap__col">
+                            <img src="./img/resume/2.png">
+                            <div class="upload-wrap__text">Загрузить PDF</div>
+                            <input type="file">
+                        </label>
+
+                        <label class="upload-wrap__col">
+                            <img src="./img/resume/2.png">
+                            <div class="upload-wrap__text">Загрузить медиа</div>
+                            <input type="file">
+                        </label>
+                    </div>
+                    <label class="label">Описание проекта</label>
+                    <div class="textarea">
+                        <textarea placeholder="Добавьте описание проекта"></textarea>
+                    </div>
+                    <div class="upload-wrap__btns">
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                        <button type="button" class="btn btn-outline-primary">Отменить</button>
+                    </div>
+                </form>
+            </div>
+              
+            <div class="exp-modal-footer">
+                <div class="upload-wrap__btns">
+                    <button type="button" class="btn btn-primary">Далее</button>
+                    <button type="button" class="btn btn-outline-primary">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <footer class="footer">
     <div class="wrap">
         <div class="footer__wrap">
@@ -384,7 +464,8 @@
 </footer>
   </div>
 
-  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

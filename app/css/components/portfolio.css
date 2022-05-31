@@ -126,4 +126,116 @@
   color: #092C9E;
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+.exp-content__wrap__addPortfilio {
+  display: flex;
+  justify-content: center;
+  max-width: initial;
+  width: 100%;
+  padding-top: 45px;
+  margin-bottom: 85px;
+}
+.exp-content__wrap__addPortfilio .btn {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 6px 20px;
+}
+
+.exp-modal .modal-dialog {
+  max-width: 1062px;
+}
+.exp-modal .modal-content {
+  padding: 12px;
+}
+.exp-modal .modal-header {
+  background: #0F47C0;
+  border-radius: 20px 20px 0px 0px;
+  padding: 12px 27px;
+  margin-bottom: 18px;
+}
+.exp-modal .modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #F4F7FF;
+}
+.exp-modal .exp-modal__addProect {
+  background: #F1F6FA;
+  padding: 66px 31px 136px;
+}
+.exp-modal .exp-modal__addProect .upload-wrap__btns button {
+  margin-right: 18px;
+}
+.exp-modal .exp-modal__addProect__wrap {
+  max-width: 764px;
+}
+.exp-modal .exp-modal__addProect__wrap .label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #494653;
+}
+.exp-modal .exp-modal__addProect__wrap .upload-wrap {
+  justify-content: flex-end;
+}
+
+label.upload-wrap__col {
+  position: relative;
+}
+label.upload-wrap__col input {
+  display: flex;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+label.upload-wrap__col:hover {
+  color: #0a58ca;
+}
+
+.exp-modal-footer {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.exp-modal-footer .upload-wrap__btns button {
+  margin-right: 18px;
+}
+.exp-modal-footer .btn {
+  font-size: 14px;
+  line-height: 20px;
+}
+.exp-modal-footer .btn-outline-primary {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 991px) {
+  .exp-modal .exp-modal__addProect__wrap .upload-wrap {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .exp-modal .exp-modal__addProect__wrap .upload-wrap {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .exp-modal-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .exp-modal .exp-modal__addProect {
+    padding: 40px 10px 50px;
+  }
+
+  .exp-content__wrap__addPortfilio .btn {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */

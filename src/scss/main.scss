@@ -28,7 +28,12 @@ body{
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1410px;
-  }
+}
+@media(max-width: 1450px){
+    .wrap{
+        max-width: 1310px;
+    }
+}
 @media(max-width: 374px){
     .wrap{
         padding: 0 15px;

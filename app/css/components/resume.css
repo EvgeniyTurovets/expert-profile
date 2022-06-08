@@ -68,5 +68,9 @@
     padding: 0;
     width: 100%;
   }
+
+  .upload-wrap__btns {
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=resume.css.map */

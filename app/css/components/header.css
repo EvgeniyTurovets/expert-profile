@@ -206,7 +206,7 @@
   color: #022964;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1350px) {
   .sub-header__nav {
     margin-left: -32px;
   }
@@ -306,11 +306,11 @@
 }
 @media (max-width: 575px) {
   .header__logo {
-    font-size: 0;
+    font-size: 18px;
   }
 
   .header__right__btn {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 
   .header__logo {
@@ -371,6 +371,11 @@
   top: auto;
 }
 
+@media (max-width: 767px) {
+  .header__right__btn--onlyds {
+    display: none;
+  }
+}
 @media (max-width: 374px) {
   .header__right__btn.have-mess .have-mess__text {
     right: -1px;
@@ -379,5 +384,10 @@
   .have-mess.tooltips-wrap .tooltips {
     font-size: 11px;
   }
+}
+.person__nav__action {
+  display: flex;
+  margin: 0 -10px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=header.css.map */

@@ -11,6 +11,16 @@
     color: #0A243F;
     margin-bottom: 37px;
 }
+@media(max-width: 1450px){
+    .status{
+        max-width: 955px;
+    }
+}
+@media(max-width: 1400px){
+    .status{
+        max-width: 975px;
+    }
+}
 .status__left{
     display: flex;
     align-items: center;
@@ -477,6 +487,12 @@ h3{
     color: #A1A4B1;
     display: inline-block;
     margin-bottom: 5px;
+    word-wrap: break-word;
+}
+@media(max-width: 576px){
+    .exp-link{
+        font-size: 10px;
+    }
 }
 .form-check__row{
     display: flex;
@@ -712,5 +728,12 @@ h3{
     .exp-content__row--phone{
         margin-bottom: 30px;
         margin-top: 15px;
+    }
+}
+
+
+@media(min-width: 768px){
+    .person__nav__onlymb{
+        display: none;
     }
 }

@@ -190,6 +190,7 @@ label.upload-wrap__col input {
   left: 0;
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 
 label.upload-wrap__col:hover {

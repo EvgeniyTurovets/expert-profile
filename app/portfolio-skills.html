@@ -370,18 +370,41 @@
                         <label class="upload-wrap__col">
                             <img src="./img/resume/1.png">
                             <div class="upload-wrap__text">Загрузить изображение</div>
+                            <div class="upload-wrap__text upload-wrap__text--file"></div>
                             <input type="file">
+                            <button class="upload-wrap__col__button" type="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3936 7.59497L7.60156 12.387" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12.3976 12.3898L7.60156 7.59277" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.334 0.750244H5.665C2.644 0.750244 0.75 2.88924 0.75 5.91624V14.0842C0.75 17.1112 2.635 19.2502 5.665 19.2502H14.333C17.364 19.2502 19.25 17.1112 19.25 14.0842V5.91624C19.25 2.88924 17.364 0.750244 14.334 0.750244Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
                         </label>
                         <label class="upload-wrap__col">
                             <img src="./img/resume/2.png">
                             <div class="upload-wrap__text">Загрузить PDF</div>
+                            <div class="upload-wrap__text upload-wrap__text--file"></div>
                             <input type="file">
+                            <button class="upload-wrap__col__button" type="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3936 7.59497L7.60156 12.387" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12.3976 12.3898L7.60156 7.59277" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.334 0.750244H5.665C2.644 0.750244 0.75 2.88924 0.75 5.91624V14.0842C0.75 17.1112 2.635 19.2502 5.665 19.2502H14.333C17.364 19.2502 19.25 17.1112 19.25 14.0842V5.91624C19.25 2.88924 17.364 0.750244 14.334 0.750244Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
                         </label>
-
                         <label class="upload-wrap__col">
                             <img src="./img/resume/2.png">
                             <div class="upload-wrap__text">Загрузить медиа</div>
+                            <div class="upload-wrap__text upload-wrap__text--file"></div>
                             <input type="file">
+                            <button class="upload-wrap__col__button" type="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3936 7.59497L7.60156 12.387" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12.3976 12.3898L7.60156 7.59277" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.334 0.750244H5.665C2.644 0.750244 0.75 2.88924 0.75 5.91624V14.0842C0.75 17.1112 2.635 19.2502 5.665 19.2502H14.333C17.364 19.2502 19.25 17.1112 19.25 14.0842V5.91624C19.25 2.88924 17.364 0.750244 14.334 0.750244Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
                         </label>
                     </div>
                     <label class="label">Описание проекта</label>
@@ -405,6 +428,79 @@
           </div>
         </div>
     </div>
+
+    
+    <!-- обложка -->
+    <div class="exp-modal exp-modal-pic modal fade" tabindex="-1" id="picModal" aria-labelledby="picModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Добавление портфолио</h5>
+            </div>
+         
+            <div class="exp-modal__addProect">
+                <form id="formpic">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
+                    
+                    <label class="exp-modal__file">
+                        <div class="text">
+                            Фото обложки
+                        </div>
+                        <svg width="404px" height="250px">
+                            <use xlink:href="./img/sprite.svg#thumbnail"></use>
+                        </svg>
+                        <label for="cropzee-input" class="image-previewer" data-cropzee="cropzee-input"></label>
+                        <div id="upload-input" style="width:350px; height: 400px;"></div>
+                        <div class="text-edit">Изменить</div>
+                        <input type="file" class="file" accept="image/png, image/gif, image/jpeg" id="upload">
+                    </label>
+
+                    <div class="formpic__wrap">
+                        <label class="label">
+                            Навыки
+                        </label>
+                        <input class="input yellow-error-input" placeholder="Введите не более 25 навыков, характеризующих вашу работу">
+                        <div class="yellow-error">Вы выбрали максимальгое колличество навыков!</div>
+                        <div class="formpic__wrap__skills">
+                            <div class="add-skills__tag">
+                                аналитика
+                                <button type="button">
+                                    <svg width="10px" height="10px">
+                                        <use xlink:href="./img/sprite.svg#close2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="add-skills__tag">
+                                продажи
+                                <button type="button">
+                                    <svg width="10px" height="10px">
+                                        <use xlink:href="./img/sprite.svg#close2"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+              
+            <div class="exp-modal-footer">
+                <div class="upload-wrap__btns">
+                    <button type="button" class="btn btn-primary">Далее</button>
+                    <button type="button" class="btn btn-outline-primary">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div>
+        <button  type="button" data-bs-toggle="modal" data-bs-target="#picModal" class="btn btn-primary">
+            Фото обложки
+        </button>
+    </div>
+    
 
     <footer class="footer">
     <div class="wrap">
@@ -501,6 +597,48 @@
   <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.js"></script>
+
+  <script>
+    let $uploadCrop = $('#upload-input').croppie({
+        enableExif: true,
+        viewport: {
+            width: 200,
+            height: 200,
+        },
+        boundary: {
+            width: 300,
+            height: 300
+        }
+    });
+
+    $('#upload').on('change', function () { 
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $uploadCrop.croppie('bind', {
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+            
+        }
+        reader.readAsDataURL(this.files[0]);
+    });
+
+    // приклад як відправити фото
+    $('#formpic').on('submit', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            console.log(resp)
+        });
+    });
+  </script>
+  
 </body>
 
 

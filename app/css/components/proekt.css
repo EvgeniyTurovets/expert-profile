@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.selectize-input.focus > input {
+  width: 100% !important;
+}
+
 .filter__title {
   font-weight: bold;
   font-size: 24px;
@@ -301,10 +305,6 @@
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-.selectize-control.single .selectize-input.dropdown-active .item {
-  display: none;
 }
 
 .selectize-control.single .selectize-input:after {

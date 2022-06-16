@@ -26,8 +26,10 @@ for (i = 0; i < l; i++) {
         sl = s.length;
         h = this.parentNode.previousSibling;
         for (i = 0; i < sl; i++) {
+          
           if (s.options[i].innerHTML == this.innerHTML) {
             s.selectedIndex = i;
+            s.dispatchEvent(new Event('change'))
             h.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
             yl = y.length;
@@ -42,10 +44,12 @@ for (i = 0; i < l; i++) {
     });
     b.appendChild(c);
   }
+ 
   x[i].appendChild(b);
   a.addEventListener("click", function(e) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
+    
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");

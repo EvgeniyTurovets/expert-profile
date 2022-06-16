@@ -11918,8 +11918,9 @@ textarea.form-control-lg {
 }
 
 .custom-select select {
-  display: none;
-  /*hide original SELECT element: */
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .select-selected {

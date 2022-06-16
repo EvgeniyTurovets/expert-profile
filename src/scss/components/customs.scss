@@ -143,3 +143,24 @@ input.yellow-error-input::placeholder{
         }
     }
 }
+.period{
+    display: flex;
+    flex-wrap: wrap;
+    .period-wrap{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .custom-select{
+            width: 150px;
+            margin-right: 15px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+    }
+}
+.expirience-blocks-new{
+    .expirience-block{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

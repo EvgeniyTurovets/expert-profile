@@ -113,8 +113,31 @@ $(function(){
     $('.exp-modal__file input').on('change', function(evt){
         let $parent = $(this).closest('.exp-modal__file') 
         $parent.addClass('upload')
-        
     })
+
+    $('#addExpBlock').on('click', function(){
+        let $expBlocks = $('.expirience-block').clone();
+        let $newBlock = $expBlocks.eq($expBlocks.length - 1)
+        let $newSelectName = '';
+        $newBlock.find('select').each(function(index, el){
+            if(!$newSelectName){
+                $newSelectName = $(el).attr('name') + '1';
+            }
+            
+            $(el).attr('name', $newSelectName)
+
+            let $parent = $(el).closest('.custom-select')
+            $parent.find('.select-selected').remove()
+            $parent.find('.select-items').remove()
+            $parent.attr('class', 'custom-select ' + $newSelectName)
+        })
+       
+        $newBlock.find('input').attr('name', $newBlock.find('input').attr('name') + '1').val('')
+        $newBlock.appendTo(".expirience-blocks-new");
+
+        customSelectInit($newSelectName)
+    })
+
 
 })
 

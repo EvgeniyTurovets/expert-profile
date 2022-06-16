@@ -95,5 +95,24 @@ $(function () {
     var $parent = $(this).closest('.exp-modal__file');
     $parent.addClass('upload');
   });
+  $('#addExpBlock').on('click', function () {
+    var $expBlocks = $('.expirience-block').clone();
+    var $newBlock = $expBlocks.eq($expBlocks.length - 1);
+    var $newSelectName = '';
+    $newBlock.find('select').each(function (index, el) {
+      if (!$newSelectName) {
+        $newSelectName = $(el).attr('name') + '1';
+      }
+
+      $(el).attr('name', $newSelectName);
+      var $parent = $(el).closest('.custom-select');
+      $parent.find('.select-selected').remove();
+      $parent.find('.select-items').remove();
+      $parent.attr('class', 'custom-select ' + $newSelectName);
+    });
+    $newBlock.find('input').attr('name', $newBlock.find('input').attr('name') + '1').val('');
+    $newBlock.appendTo(".expirience-blocks-new");
+    customSelectInit($newSelectName);
+  });
 });
 //# sourceMappingURL=main.js.map

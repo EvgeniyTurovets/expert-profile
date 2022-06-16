@@ -173,31 +173,74 @@
                     </h3>
                 </div>
                 <div class="exp-content__wrap">
-                    <div class="exp-content__row">
-                        <div class="exp-content__row__left">
-                            <label class="label">
-                                Добавить образование
-                            </label>
+                    
+                    <div class="expirience-block">
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Учебное заведение
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input class="input" data=""type="text" name="expName">
+                            </div>
                         </div>
-                        <div class="exp-content__row__right">
-                            <input class="input" type="text">
+    
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Период обучения
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <div class="period">
+                                    <div class="period-wrap">
+                                        От
+                                        <div class="custom-select">
+                                            <select name="expSelectFrom">
+                                                <option value="">год</option>
+                                                <option value="">1999</option>
+                                                <option value="">2000</option>
+                                                <option value="">2001</option>
+                                                <option value="">2002</option>
+                                                <option value="">2003</option>
+                                                <option value="">2004</option>
+                                                <option value="">2005</option>
+                                                <option value="">2006</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="period-wrap">
+                                        До
+                                        <div class="custom-select">
+                                            <select name="expSelectTo">
+                                                <option value="">год</option>
+                                                <option value="">1999</option>
+                                                <option value="">2000</option>
+                                                <option value="">2001</option>
+                                                <option value="">2002</option>
+                                                <option value="">2003</option>
+                                                <option value="">2005</option>
+                                                <option value="">2006</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="expirience-blocks-new">
+                        
+                    </div>
+
                     <div class="exp-content__row">
                         <div class="exp-content__row__left">
                             
                         </div>
                         <div class="exp-content__row__right">
-                            <input class="input" type="text">
-                        </div>
-                    </div>
-                    <div class="exp-content__row">
-                        <div class="exp-content__row__left">
-                            
-                        </div>
-                        <div class="exp-content__row__right">
-                            <input class="input" type="text">
                             <button type="button" class="btn btn-primary">Сохранить</button>
+                            <button id="addExpBlock" type="button" class="btn btn-outline-primary">Добавить еще</button>
                         </div>
                     </div>
                 </div>

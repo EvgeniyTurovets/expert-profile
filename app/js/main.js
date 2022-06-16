@@ -114,5 +114,24 @@ $(function () {
     $newBlock.appendTo(".expirience-blocks-new");
     customSelectInit($newSelectName);
   });
+  $('#addLangBlock').on('click', function () {
+    var $expBlocks = $('.expirience-block--lang').clone();
+    var $newBlock = $expBlocks.eq($expBlocks.length - 1);
+    var $newSelectName = '';
+    $newBlock.find('select').each(function (index, el) {
+      if (!$newSelectName) {
+        $newSelectName = $(el).attr('name') + '1';
+      }
+
+      $(el).attr('name', $newSelectName);
+      var $parent = $(el).closest('.custom-select');
+      $parent.find('.select-selected').remove();
+      $parent.find('.select-items').remove();
+      $parent.attr('class', 'custom-select ' + $newSelectName);
+    });
+    $newBlock.find('input').attr('name', $newBlock.find('input').attr('name') + '1').val('');
+    $newBlock.appendTo(".expirience-blocks-lang-new");
+    customSelectInit($newSelectName);
+  });
 });
 //# sourceMappingURL=main.js.map

@@ -158,7 +158,21 @@ input.yellow-error-input::placeholder{
         }
     }
 }
+.period--langs{
+    .period-wrap{
+        .custom-select{
+            margin-left: 0;
+        }
+    }
+}
 .expirience-blocks-new{
+    .expirience-block{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+.expirience-blocks-lang-new{
     .expirience-block{
         margin-top: 25px;
         margin-bottom: 25px;

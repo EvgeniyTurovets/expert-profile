@@ -47,13 +47,26 @@
         color: #18A0FB;
         margin-left: 45px;
     }
+    .text2{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 325px;
+        margin: 0 auto;
+        span{
+            font-weight: bold;
+            margin: 15px 0;
+            display: block;
+        }
+    }
     .img{
         display: none;
         margin: 0 auto;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    #upload-input{
+    .upload-input{
         display: none;
         margin: 0 auto;
         margin-top: 15px;
@@ -83,11 +96,14 @@
     .img{
         display: block;
     }
-    #upload-input{
+    .upload-input{
         display: block;
     }
     .text-edit{
         display: block;
+    }
+    .text2{
+        display: none;
     }
 }
 #yourId {
@@ -96,7 +112,7 @@
     position:relative; /* or fixed or absolute */
 }
 
-.exp-modal__file #upload-input{
+.exp-modal__file .upload-input{
     max-height: 350px;
     max-width: 100%;
 }
@@ -177,4 +193,7 @@ input.yellow-error-input::placeholder{
         margin-top: 25px;
         margin-bottom: 25px;
     }
+}
+.exp-modal__addProect.exp-modal__addProect--about{
+    padding-bottom: 0px;   
 }

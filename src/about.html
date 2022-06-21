@@ -90,12 +90,20 @@
                         </div> -->
                     </div>
                     <div class="about__sett__right">
-                        <div class="custom-select">
-                            <select>
+                        <!-- <div class="custom-select">
+                            <select >
                                 <option value="0" selected>Изменить обложку</option>
-                                <option>Применить шаблон</option>
-                                <option>Загрузить изображение</option>
+                                <option value="1">Применить шаблон</option>
+                                <option value="2">Загрузить изображение</option>
                             </select>
+                           
+                        </div> -->
+                        <div class="custom-select--about">
+                            <div class="select-selected--about" id="selectChangePhoto">Изменить обложку</div>
+                            <div class="select-items--about select-hide--about">
+                                <div data-bs-toggle="modal" data-bs-target="#picModalShablon">Применить шаблон</div>
+                                <div data-bs-toggle="modal" data-bs-target="#picModal">Загрузить изображение</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -416,10 +424,177 @@
     @include('partials/footer.html')
   </div>
 
+    <!-- обложка завантаження -->
+    <div class="exp-modal exp-modal-pic modal fade" tabindex="-1" id="picModal" aria-labelledby="picModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <h5 class="modal-title">Добавление обложки</h5>
+            </div>
+            
+            <div class="exp-modal__addProect exp-modal__addProect--about">
+                <form id="formpic">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
+                    
+                    <label class="exp-modal__file">
+                        <div class="text">
+                            Фото обложки
+                        </div>
+                        <svg width="404px" height="250px">
+                            <use xlink:href="./img/sprite.svg#thumbnail"></use>
+                        </svg>
+                        <label for="cropzee-input" class="image-previewer" data-cropzee="cropzee-input"></label>
+                        <div id="upload-input2" class="upload-input" style="width:350px; height: 400px;"></div>
+                        <div class="text2">
+                            Перетащите файл (png/jpg, мин 200 x 200 px)<br>
+                            MP4 ( не более ..... МБ)
+                            <span>Или</span>
+                            <button class="btn btn-primary">
+                                Загрузить файл
+                            </button>
+                        </div>
+                        <div class="text-edit">Изменить</div>
+                        <input type="file" class="file" accept="image/png, image/gif, image/jpeg" id="upload2">
+                    </label>
+                </form>
+            </div>
+
+            <div class="exp-modal__addProect exp-modal__addProect--about"></div>
+            
+            <div class="exp-modal-footer">
+                <div class="upload-wrap__btns">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- обложка шаблон -->
+    <div class="exp-modal exp-modal-pic modal fade" tabindex="-1" id="picModalShablon" aria-labelledby="picModalShablon" aria-hidden="true">
+        <div class="modal-dialog">
+        <form class="modal-content">
+            
+            <div class="modal-header">
+                <h5 class="modal-title">Добавление обложки</h5>
+            </div>
+            
+            <div class="exp-modal__addProect exp-modal__addProect--about">
+                <div class="shablon-flex">
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                    <label class="shablon-flex__item">
+                        <input type="radio" name="shablon">
+                        <div class="shablon-flex__item__inner" style="background-image: url(./img/about/about-fon.png);"></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="exp-modal__addProect exp-modal__addProect--about"></div>
+            
+            <div class="exp-modal-footer">
+                <div class="upload-wrap__btns">
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+
   <script type="text/javascript" src="libs/jquery.min.js"></script>
   <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.js"></script>
+
+  <script>
+
+    // обложка
+    let $uploadCrop = $('#upload-input2').croppie({
+        enableExif: true,
+        viewport: {
+            width: 300,
+            height: 200,
+        },
+        boundary: {
+            width: 320,
+            height: 300
+        }
+    });
+
+    $('#upload2').on('change', function () { 
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $uploadCrop.croppie('bind', {
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+            
+        }
+        reader.readAsDataURL(this.files[0]);
+    });
+
+
+    // приклад як відправити фото
+    $('#upload2').on('change', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            console.log(resp)
+        });
+    });
+  </script>
 </body>
 
 

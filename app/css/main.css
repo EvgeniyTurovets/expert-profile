@@ -1527,6 +1527,155 @@ h3 {
     display: none;
   }
 }
+.custom-select--about {
+  position: relative;
+}
+
+.select-items--about div, .select-selected--about {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-selected--about {
+  background: #FFFFFF;
+  border: 1px solid #A1A4B1;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8B90A0;
+  padding: 11px 16px;
+  padding-right: 40px;
+}
+
+.select-selected--about:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected--about:after {
+  border-color: #A1A4B1 transparent transparent transparent;
+  top: 21px;
+  right: 23px;
+}
+
+.select-hide--about {
+  display: none;
+}
+
+.select-items--about {
+  border: 1px solid #2B5CFB;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 4px 4px;
+  background: #FFFFFF;
+}
+
+.select-selected--about.select-arrow-active {
+  border: 1px solid #2B5CFB;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 20px 20px 0px 0px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.select-items--about {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-items--about div:hover {
+  background-color: #f5fafd;
+}
+
+.select-items--about div {
+  background-color: #fff;
+}
+
+.select-items--about div:hover, .select-items--about .same-as-selected {
+  color: #092C9E;
+}
+
+.select-items--about div {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-items--about div {
+  font-size: 14px;
+  line-height: 24px;
+  color: #8B90A0;
+}
+
+.exp-modal__addProect__text1 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.exp-modal__addProect__text2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.shablon-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+}
+
+.shablon-flex__item {
+  margin: 0 25px;
+  width: calc(33.3333333333% - 50px);
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.shablon-flex__item input {
+  display: none;
+}
+.shablon-flex__item input + .shablon-flex__item__inner {
+  border: 1px solid #A1A4B1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 25%;
+}
+.shablon-flex__item input:checked + .shablon-flex__item__inner {
+  border: 1px solid #0F47C0;
+  box-shadow: 0 0 5px rgba(15, 71, 192, 0.2);
+}
+
+.shablon-flex__item:hover input + .shablon-flex__item__inner {
+  border: 1px solid #0F47C0;
+  box-shadow: 0 0 5px rgba(15, 71, 192, 0.2);
+}
+
+@media (max-width: 991px) {
+  .shablon-flex__item {
+    width: calc(50% - 50px);
+  }
+}
+@media (max-width: 549px) {
+  .shablon-flex__item {
+    width: calc(100% - 50px);
+  }
+}
 .upload-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -2113,7 +2262,7 @@ label.upload-wrap__col:hover {
   color: #000;
 }
 
-.proekt__actios button:hover, .proekt__actios button:active {
+.proekt__actios button:hover, .proekt__actios button.active {
   background-color: #F1F6FA;
   color: var(--color-blue);
 }
@@ -4343,13 +4492,26 @@ label.upload-wrap__col:hover {
   color: #18A0FB;
   margin-left: 45px;
 }
+.exp-modal__file .text2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 325px;
+  margin: 0 auto;
+}
+.exp-modal__file .text2 span {
+  font-weight: bold;
+  margin: 15px 0;
+  display: block;
+}
 .exp-modal__file .img {
   display: none;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.exp-modal__file #upload-input {
+.exp-modal__file .upload-input {
   display: none;
   margin: 0 auto;
   margin-top: 15px;
@@ -4380,11 +4542,14 @@ label.upload-wrap__col:hover {
 .exp-modal__file.upload .img {
   display: block;
 }
-.exp-modal__file.upload #upload-input {
+.exp-modal__file.upload .upload-input {
   display: block;
 }
 .exp-modal__file.upload .text-edit {
   display: block;
+}
+.exp-modal__file.upload .text2 {
+  display: none;
 }
 
 #yourId {
@@ -4394,7 +4559,7 @@ label.upload-wrap__col:hover {
   /* or fixed or absolute */
 }
 
-.exp-modal__file #upload-input {
+.exp-modal__file .upload-input {
   max-height: 350px;
   max-width: 100%;
 }
@@ -4482,5 +4647,9 @@ input.yellow-error-input::placeholder {
 .expirience-blocks-lang-new .expirience-block {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.exp-modal__addProect.exp-modal__addProect--about {
+  padding-bottom: 0px;
 }
 /*# sourceMappingURL=main.css.map */

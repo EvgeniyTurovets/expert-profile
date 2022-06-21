@@ -221,7 +221,7 @@
   color: #000;
 }
 
-.proekt__actios button:hover, .proekt__actios button:active {
+.proekt__actios button:hover, .proekt__actios button.active {
   background-color: #F1F6FA;
   color: var(--color-blue);
 }

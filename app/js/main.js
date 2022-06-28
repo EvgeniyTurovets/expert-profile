@@ -55,7 +55,7 @@ $(function () {
     $('.exp-profile__tabs__content').removeClass('active');
     $('.exp-profile__tabs__content').eq(index).addClass('active');
   });
-  $('.tabs-nav li a').on('click', function () {
+  $('.tabs-nav a').on('click', function () {
     if (!$(this).hasClass('active')) {
       $(this).closest('.tabs-nav').find('a').removeClass('active');
       $(this).addClass('active');

@@ -270,7 +270,7 @@
                             </div>
                             <div class="exp-content__row__right">
                                 <div class="js-selectize--mini-input">
-                                    <select class="js-selectize" placeholder="">
+                                    <select placeholder="" id="newId">
                                         <option value="" selected="selected"></option>
                                         <option>Страна 1</option>
                                         <option>Страна 2</option>
@@ -278,6 +278,8 @@
                                     </select>
                                 </div>
                             </div>
+                            
+                            
                         </div>
                         <div class="exp-content__row">
                             <div class="exp-content__row__left">
@@ -292,6 +294,8 @@
                                         <option>Город 1</option>
                                         <option>Город 2</option>
                                         <option>Город 3</option>
+                                        <option>Город 4</option>
+                                        <option>Город 5</option>
                                     </select>
                                 </div>
                             </div>
@@ -411,6 +415,20 @@
   <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script>
+    $("#newId").selectize({
+        persist: true,
+        onDropdownOpen: function(){
+            var value = this.getValue();
+            this.clear();
+            this.$control_input.val(value);
+        },
+        onChange: function(value){
+            console.log('value')
+        }
+    })
+</script>
 </body>
 
 

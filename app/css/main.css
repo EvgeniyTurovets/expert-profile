@@ -947,6 +947,13 @@ body {
   margin-bottom: 8px;
 }
 
+.sidebar__nav li span {
+  color: #092C9E;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .sidebar__nav a {
   font-weight: bold;
   font-size: 16px;
@@ -4445,6 +4452,19 @@ label.upload-wrap__col:hover {
     font-size: 12px;
   }
 }
+.withFile__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.withFile {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
 .js-selectize--mini-input .selectize-control.single .selectize-input {
   background-image: none !important;
   padding-left: 15px;

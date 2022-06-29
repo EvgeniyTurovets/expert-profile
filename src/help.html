@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#F1F6FA">
+  <title>New site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="app">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/sub-header.html')
+      
+      <div class="wrap">
+        @include('partials/status.html')
+
+        <div class="exp-content">
+            <div class="exp-content__sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                        <div class="sidebar__name">Александр Александров</div>
+                    </div>
+                   
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__nav__menu1">
+                            <li>
+                                <a href="">Просмотр профиля</a>
+                            </li>
+                            <li>
+                                <a href="">Пройти отбор</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">Редактировать профиль</a>
+                            </li>
+                            <li>
+                                <a href="">Контактная информация</a>
+                            </li>
+                            <li>
+                                <a href="">Резюме</a>
+                            </li>
+                            <li class="active">
+                                <a href="">Портфолио
+                                    <svg width="24px" height="24px" class="open">
+                                        <use xlink:href="./img/sprite.svg#edit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Личная информация </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="exp-content__edit">
+                <div class="exp-content__top exp-content__top__mess">
+                    Запрос в службу поддержки
+                </div>
+                <div class="proekt__content proekt__content__app">
+                    <div class="app__messList">
+                        <div class="app__item">
+                            <div class="app__mess">
+                                <div class="app__mess__avatar">
+                                    <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                </div>
+                                <div class="app__mess__right">
+                                    <div class="proekt__content__top">
+                                        <div class="proekt__content__left">
+                                            <div class="proekt__content__person">
+                                                <div class="proekt__content__person__name">
+                                                    Какой то администратор
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proekt__content__text">
+                                        Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut. Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque. Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+                                    </div>
+                                    <div class="app__item__data">
+                                        05.05.2021  12:55
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="app__item">
+                            <div class="app__mess">
+                                <div class="app__mess__avatar">
+                                    <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                </div>
+                                <div class="app__mess__right">
+                                    <div class="proekt__content__top">
+                                        <div class="proekt__content__left">
+                                            <div class="proekt__content__person">
+                                                <div class="proekt__content__person__name">
+                                                    Пользователь
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proekt__content__text">
+                                        Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut. Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque. Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+                                    </div>
+                                    <div class="withFile__row">
+                                        <a class="withFile" data-fslightbox="gallery" href="./img/app/test.jpg">
+                                            <img src="./img/app/test.jpg">
+                                        </a>
+                                        <div class="app__item__data">
+                                            05.05.2021  12:55
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+                    <div class="app__messAction">
+                        
+
+                        <form class="app__sendMess">
+                            <div class="textarea">
+                                <textarea placeholder="Напишите сообщение"></textarea>
+                            </div>
+                            <div class="app__sendMess__bot">
+                                <button class="btn btn-primary" type="submit">Отправить</button>
+                                <label class="app__file">
+                                    <input type="file" id="inputfile">
+                                    <div class="app__file__wrap">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                            <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="#3C64B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.5 10C9.32843 10 10 9.32843 10 8.5C10 7.67157 9.32843 7 8.5 7C7.67157 7 7 7.67157 7 8.5C7 9.32843 7.67157 10 8.5 10Z" stroke="#3C64B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 15L16 10L5 21" stroke="#3C64B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                        </svg>
+                                            
+                                        <div class="filename" id="filename">
+
+                                        </div>
+                                        <div class="filePlaceholder">
+                                            Прикрепите файлы или просто перетяните их в эту область для вложения
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

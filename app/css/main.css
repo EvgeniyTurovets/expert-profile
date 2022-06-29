@@ -1683,6 +1683,32 @@ h3 {
     width: calc(100% - 50px);
   }
 }
+.deleteModal__checkboxes {
+  padding: 15px;
+  background: #F1F6FA;
+  margin-bottom: 25px;
+}
+.deleteModal__checkboxes .form-check {
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+}
+
+#form-check-input__another {
+  display: none;
+  max-width: 700px;
+  margin-bottom: 15px;
+}
+
+.deleteModal2__wrap {
+  padding: 25px;
+  background: #F1F6FA;
+  margin-bottom: 25px;
+}
+
+.deleteModal2__wrap2 {
+  max-width: 400px;
+}
+
 .upload-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -2044,6 +2070,10 @@ label.upload-wrap__col:hover {
 
   .exp-content__wrap__addPortfilio .btn {
     font-size: 16px;
+  }
+
+  .exp-modal .modal-title {
+    font-size: 20px;
   }
 }
 .proekt {

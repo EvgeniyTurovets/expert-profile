@@ -174,5 +174,9 @@ $(function(){
             $('#selectChangePhoto').next('.select-items--about').addClass('select-hide--about')
         }
     });
+
+    $('.form-check-input__another').on('change', function(){
+        $('#form-check-input__another').fadeToggle(200)
+    })
 })
 

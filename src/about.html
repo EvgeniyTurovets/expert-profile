@@ -415,6 +415,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="exp-content__title">
+                    <h3>
+                       Удаление аккаунта
+                    </h3>
+                </div>
+                <div class="exp-content__wrap">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        Удалить Аккаунт
+                    </button>
+                </div>
+
             </div>
         </div>
 
@@ -424,51 +436,157 @@
     @include('partials/footer.html')
   </div>
 
+    <div class="exp-modal modal fade" tabindex="-1" id="deleteModal" aria-labelledby="deleteModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Причины удаления аккаунта</h5>
+                </div>
+                <form>
+                    <div class="deleteModal__checkboxes">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Я не нашел вакансии, которые искал
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                            <label class="form-check-label" for="flexCheckDefault1">
+                                Мне не удалось получить работу
+    
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                                Здесь слишком большая конкуренция
+    
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                                Сервис слишком дорогой
+    
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                            <label class="form-check-label" for="flexCheckDefault4">
+                                Я не нуждаюсь в этом сервисе сейчас
+    
+    
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                                Сервис слишком непонятный
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                            <label class="form-check-label" for="flexCheckDefault6">
+                                Exspertland отправляет слишком много сообщений на мою электоронную почту
+    
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input__another" type="checkbox" value="" id="flexCheckDefault7">
+                            <label class="form-check-label" for="flexCheckDefault7">
+                                Другое
+                            </label>
+                        </div>
+                        <div id="form-check-input__another" class="textarea">
+                            <textarea placeholder="Опишите причину..."></textarea>
+                        </div>
+                    </div>
+                    <div class="deleteModal__checkboxes__bot">
+                        <div class="upload-wrap__btns">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#deleteModal2">Продолжить</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="exp-modal modal fade" tabindex="-1" id="deleteModal2" aria-labelledby="deleteModal2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Введите данные для подтверждения</h5>
+                </div>
+                <form>
+                    <div class="deleteModal2__wrap">
+                        <div class="deleteModal2__wrap2">
+                            <label class="label">
+                                Имя пользователя <span>*</span>
+                            </label>
+                            <input class="input" type="text" placeholder="" required>
+    
+                            <label class="label">
+                                Пароль <span>*</span>
+                            </label>
+                            <input class="input" type="text" placeholder="" required>
+                        </div>
+                    </div>    
+                    <div class="deleteModal__checkboxes__bot">
+                        <div class="upload-wrap__btns">
+                            <button type="submit" class="btn btn-primary">Подтвердить</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- обложка завантаження -->
     <div class="exp-modal exp-modal-pic modal fade" tabindex="-1" id="picModal" aria-labelledby="picModal" aria-hidden="true">
         <div class="modal-dialog">
-        <div class="modal-content">
-            
-            <div class="modal-header">
-                <h5 class="modal-title">Добавление обложки</h5>
-            </div>
-            
-            <div class="exp-modal__addProect exp-modal__addProect--about">
-                <form id="formpic">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
-                    
-                    <label class="exp-modal__file">
-                        <div class="text">
-                            Фото обложки
-                        </div>
-                        <svg width="404px" height="250px">
-                            <use xlink:href="./img/sprite.svg#thumbnail"></use>
-                        </svg>
-                        <label for="cropzee-input" class="image-previewer" data-cropzee="cropzee-input"></label>
-                        <div id="upload-input2" class="upload-input" style="width:350px; height: 400px;"></div>
-                        <div class="text2">
-                            Перетащите файл (png/jpg, мин 200 x 200 px)<br>
-                            MP4 ( не более ..... МБ)
-                            <span>Или</span>
-                            <button class="btn btn-primary">
-                                Загрузить файл
-                            </button>
-                        </div>
-                        <div class="text-edit">Изменить</div>
-                        <input type="file" class="file" accept="image/png, image/gif, image/jpeg" id="upload2">
-                    </label>
-                </form>
-            </div>
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавление обложки</h5>
+                </div>
+                
+                <div class="exp-modal__addProect exp-modal__addProect--about">
+                    <form id="formpic">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
+                        
+                        <label class="exp-modal__file">
+                            <div class="text">
+                                Фото обложки
+                            </div>
+                            <svg width="404px" height="250px">
+                                <use xlink:href="./img/sprite.svg#thumbnail"></use>
+                            </svg>
+                            <label for="cropzee-input" class="image-previewer" data-cropzee="cropzee-input"></label>
+                            <div id="upload-input2" class="upload-input" style="width:350px; height: 400px;"></div>
+                            <div class="text2">
+                                Перетащите файл (png/jpg, мин 200 x 200 px)<br>
+                                MP4 ( не более ..... МБ)
+                                <span>Или</span>
+                                <button class="btn btn-primary">
+                                    Загрузить файл
+                                </button>
+                            </div>
+                            <div class="text-edit">Изменить</div>
+                            <input type="file" class="file" accept="image/png, image/gif, image/jpeg" id="upload2">
+                        </label>
+                    </form>
+                </div>
 
-            <div class="exp-modal__addProect exp-modal__addProect--about"></div>
-            
-            <div class="exp-modal-footer">
-                <div class="upload-wrap__btns">
-                    <button type="button" class="btn btn-primary">Сохранить</button>
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                <div class="exp-modal__addProect exp-modal__addProect--about"></div>
+                
+                <div class="exp-modal-footer">
+                    <div class="upload-wrap__btns">
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 

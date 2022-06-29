@@ -289,7 +289,7 @@
                             </div>
                             <div class="exp-content__row__right">
                                 <div class="js-selectize--mini-input">
-                                    <select class="js-selectize" placeholder="">
+                                    <select id="newId2" placeholder="">
                                         <option value="" selected="selected"></option>
                                         <option>Город 1</option>
                                         <option>Город 2</option>
@@ -427,6 +427,26 @@
         onChange: function(value){
             console.log(value)
         }
+    })
+
+    let townValue = ''
+    $("#newId2").selectize({
+        persist: true,
+        onDropdownOpen: function(){
+            var value = this.getValue();
+            this.clear();
+            this.$control_input.val(value);
+        },
+        onType: function(str){
+            townValue = str
+        },
+        onBlur: function(){
+            if(townValue.length > 0){
+                this.addOption({value: townValue,text:townValue});
+                this.addItem(townValue); 
+            }
+            townValue = ''
+        },
     })
 </script>
 </body>

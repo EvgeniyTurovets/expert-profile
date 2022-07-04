@@ -180,9 +180,9 @@
                         Образование
                     </h3>
                 </div>
-                <div class="exp-content__wrap">
+                <form id="educationForm1" class="exp-content__wrap">
                     
-                    <div class="expirience-block">
+                    <div class="expirience-block expirience-block--education">
                         <div class="exp-content__row">
                             <div class="exp-content__row__left">
                                 <label class="label">
@@ -206,15 +206,15 @@
                                         От
                                         <div class="custom-select">
                                             <select name="expSelectFrom">
-                                                <option value="">год</option>
-                                                <option value="">1999</option>
-                                                <option value="">2000</option>
-                                                <option value="">2001</option>
-                                                <option value="">2002</option>
-                                                <option value="">2003</option>
-                                                <option value="">2004</option>
-                                                <option value="">2005</option>
-                                                <option value="">2006</option>
+                                                <option value="0">год</option>
+                                                <option value="1999">1999</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2006">2006</option>
                                             </select>
                                         </div>
                                     </div>
@@ -223,13 +223,13 @@
                                         <div class="custom-select">
                                             <select name="expSelectTo">
                                                 <option value="">год</option>
-                                                <option value="">1999</option>
-                                                <option value="">2000</option>
-                                                <option value="">2001</option>
-                                                <option value="">2002</option>
-                                                <option value="">2003</option>
-                                                <option value="">2005</option>
-                                                <option value="">2006</option>
+                                                <option value="1999">1999</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2006">2006</option>
                                             </select>
                                         </div>
                                     </div>
@@ -247,18 +247,18 @@
                             
                         </div>
                         <div class="exp-content__row__right">
-                            <button type="button" class="btn btn-primary">Сохранить</button>
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
                             <button id="addExpBlock" type="button" class="btn btn-outline-primary">Добавить еще</button>
                         </div>
                     </div>
-                </div>
+                </form>
 
                 <div class="exp-content__title">
                     <h3>
                         Языки
                     </h3>
                 </div>
-                <div class="exp-content__wrap">
+                <form id="langForm1" class="exp-content__wrap">
                     
                     <div class="expirience-block expirience-block--lang">
                         <div class="exp-content__row">
@@ -284,12 +284,12 @@
                                         <div class="custom-select">
                                             <select name="langSelectFrom">
                                                 <option value="">...</option>
-                                                <option value="">a1</option>
-                                                <option value="">a2</option>
-                                                <option value="">b1</option>
-                                                <option value="">b2</option>
-                                                <option value="">c1</option>
-                                                <option value="">c2</option>
+                                                <option value="a1">a1</option>
+                                                <option value="a2">a2</option>
+                                                <option value="b1">b1</option>
+                                                <option value="b2">b2</option>
+                                                <option value="c1">c1</option>
+                                                <option value="c2">c2</option>
                                             </select>
                                         </div>
                                     </div>
@@ -308,11 +308,11 @@
                             
                         </div>
                         <div class="exp-content__row__right">
-                            <button type="button" class="btn btn-primary">Сохранить</button>
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
                             <button id="addLangBlock" type="button" class="btn btn-outline-primary">Добавить еще</button>
                         </div>
                     </div>
-                </div>
+                </form>
 
                 <div class="exp-content__title">
                     <h3>
@@ -712,7 +712,24 @@
             console.log(resp)
         });
     });
+
+    //приклад обробки форм
+    $('#educationForm1').on('submit', function(e){
+        e.preventDefault()
+        console.log($(this).serialize())
+    })
+
+    $('#langForm1').on('submit', function(e){
+        e.preventDefault()
+        console.log($(this).serialize())
+    })
+
+    
   </script>
+
+  
+
+
 </body>
 
 

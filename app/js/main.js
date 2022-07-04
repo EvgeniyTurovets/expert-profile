@@ -100,7 +100,7 @@ $(function () {
     $parent.addClass('upload');
   });
   $('#addExpBlock').on('click', function () {
-    var $expBlocks = $('.expirience-block').clone();
+    var $expBlocks = $('.expirience-block--education').clone();
     var $newBlock = $expBlocks.eq($expBlocks.length - 1);
     var $newSelectName = '';
     $newBlock.find('select').each(function (index, el) {

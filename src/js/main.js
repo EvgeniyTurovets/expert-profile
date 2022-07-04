@@ -119,7 +119,7 @@ $(function(){
     })
 
     $('#addExpBlock').on('click', function(){
-        let $expBlocks = $('.expirience-block').clone();
+        let $expBlocks = $('.expirience-block--education').clone();
         let $newBlock = $expBlocks.eq($expBlocks.length - 1)
         let $newSelectName = '';
         $newBlock.find('select').each(function(index, el){

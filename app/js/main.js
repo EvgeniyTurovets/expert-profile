@@ -116,7 +116,21 @@ $(function () {
     });
     $newBlock.find('input').attr('name', $newBlock.find('input').attr('name') + '1').val('');
     $newBlock.appendTo(".expirience-blocks-new");
+
+    if ($('.expirience-blocks-new').find('.expirience-block--education').length > 0) {
+      $('.expirience-blocks-new').addClass('not-empty');
+    }
+
     customSelectInit($newSelectName);
+  });
+  $('#removeExpBlock').on('click', function () {
+    var indexLastBlock = $('.expirience-blocks-new').find('.expirience-block--education').length - 1;
+    console.log(indexLastBlock);
+    $('.expirience-blocks-new').find('.expirience-block--education').eq(indexLastBlock).remove();
+
+    if (!$('.expirience-blocks-new').find('.expirience-block--education').length > 0) {
+      $('.expirience-blocks-new').removeClass('not-empty');
+    }
   });
   $('#addLangBlock').on('click', function () {
     var $expBlocks = $('.expirience-block--lang').clone();
@@ -132,10 +146,24 @@ $(function () {
       $parent.find('.select-selected').remove();
       $parent.find('.select-items').remove();
       $parent.attr('class', 'custom-select ' + $newSelectName);
-    });
-    $newBlock.find('input').attr('name', $newBlock.find('input').attr('name') + '1').val('');
+    }); // $newBlock.find('input').attr('name', $newBlock.find('input').attr('name') + '1').val('')
+
     $newBlock.appendTo(".expirience-blocks-lang-new");
+
+    if ($('.expirience-blocks-lang-new').find('.expirience-block--lang').length > 0) {
+      $('.expirience-blocks-lang-new').addClass('not-empty');
+    }
+
     customSelectInit($newSelectName);
+  });
+  $('#removeLangBlock').on('click', function () {
+    var indexLastBlock = $('.expirience-blocks-lang-new').find('.expirience-block--lang').length - 1;
+    console.log(indexLastBlock);
+    $('.expirience-blocks-lang-new').find('.expirience-block--lang').eq(indexLastBlock).remove();
+
+    if (!$('.expirience-blocks-lang-new').find('.expirience-block--lang').length > 0) {
+      $('.expirience-blocks-lang-new').removeClass('not-empty');
+    }
   });
   $('#selectChangePhoto').on('click', function () {
     $(this).toggleClass('select-arrow-active');

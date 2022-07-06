@@ -980,4 +980,26 @@ h3 {
 .deleteModal2__wrap2 {
   max-width: 400px;
 }
+
+.expirience-blocks-lang-new {
+  display: flex;
+  flex-direction: column;
+}
+
+.expirience-blocks-new {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-for-remove {
+  display: none;
+  order: 2;
+}
+.block-for-remove .btn {
+  margin-top: 0;
+}
+
+.not-empty .block-for-remove {
+  display: flex;
+}
 /*# sourceMappingURL=about.css.map */

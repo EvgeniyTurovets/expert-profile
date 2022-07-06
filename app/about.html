@@ -369,7 +369,7 @@
                                     <div class="period-wrap">
                                         От
                                         <div class="custom-select">
-                                            <select name="expSelectFrom">
+                                            <select id="expSelectFrom" name="expSelectFrom">
                                                 <option value="0">год</option>
                                                 <option value="1999">1999</option>
                                                 <option value="2000">2000</option>
@@ -403,7 +403,14 @@
                     </div>
 
                     <div class="expirience-blocks-new">
-
+                        <div class="exp-content__row block-for-remove">
+                            <div class="exp-content__row__left">
+                            
+                            </div>
+                            <div class="exp-content__row__right">
+                                <button type="button" id="removeExpBlock" class="btn btn-danger">Удалить</button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="exp-content__row">
@@ -432,7 +439,14 @@
                                 </label>
                             </div>
                             <div class="exp-content__row__right">
-                                <input class="input" data=""type="text" name="langName">
+                                <div class="custom-select">
+                                    <select id="expSelectFrom" name="langName">
+                                        <option value="0">...</option>
+                                        <option value="Английський">Английський</option>
+                                        <option value="Немецкий">Немецкий</option>
+                                        <option value="Украинский">Украинский</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
     
@@ -464,8 +478,16 @@
                     </div>
 
                     <div class="expirience-blocks-lang-new">
-                        
+                        <div class="exp-content__row block-for-remove">
+                            <div class="exp-content__row__left">
+                            
+                            </div>
+                            <div class="exp-content__row__right">
+                                <button type="button" id="removeLangBlock" class="btn btn-danger">Удалить</button>
+                            </div>
+                        </div>
                     </div>
+                    
 
                     <div class="exp-content__row">
                         <div class="exp-content__row__left">
@@ -473,7 +495,9 @@
                         </div>
                         <div class="exp-content__row__right">
                             <button type="submit" class="btn btn-primary">Сохранить</button>
+                           
                             <button id="addLangBlock" type="button" class="btn btn-outline-primary">Добавить еще</button>
+                            
                         </div>
                     </div>
                 </form>
@@ -974,6 +998,10 @@
     $('#langForm1').on('submit', function(e){
         e.preventDefault()
         console.log($(this).serialize())
+    })
+
+    $('#expSelectFrom').on('change', function(){
+        console.log($(this))
     })
 
     

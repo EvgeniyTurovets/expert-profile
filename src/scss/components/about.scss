@@ -943,3 +943,33 @@ h3{
         display: flex;
     }
 }
+
+.form-select{
+    background-color: #FFFFFF;
+    border: 1px solid #A1A4B1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8B90A0;
+    padding: 11px 16px;
+    padding-right: 40px;
+    position: relative;
+    background-image: url('../img/about/select-img.svg');
+    background-size: 12px;
+}
+
+// .form-select:after{
+//     position: absolute;
+//     content: "";
+//     display: block;
+//     top: 14px;
+//     right: 10px;
+//     width: 0;
+//     height: 0;
+//     border: 6px solid transparent;
+//     border-color: #fff transparent transparent transparent;
+//     border-color: #A1A4B1 transparent transparent transparent;
+//     top: 21px;
+//     right: 23px;
+// }

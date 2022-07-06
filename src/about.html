@@ -190,7 +190,7 @@
                                 </label>
                             </div>
                             <div class="exp-content__row__right">
-                                <input class="input" data=""type="text" name="expName">
+                                <input class="input" type="text" name="expName">
                             </div>
                         </div>
     
@@ -204,47 +204,33 @@
                                 <div class="period">
                                     <div class="period-wrap">
                                         От
-                                        <div class="custom-select">
-                                            <select id="expSelectFrom" name="expSelectFrom">
-                                                <option value="0">год</option>
-                                                <option value="1999">1999</option>
-                                                <option value="2000">2000</option>
-                                                <option value="2001">2001</option>
-                                                <option value="2002">2002</option>
-                                                <option value="2003">2003</option>
-                                                <option value="2004">2004</option>
-                                                <option value="2005">2005</option>
-                                                <option value="2006">2006</option>
-                                            </select>
-                                        </div>
+                                        <select class="form-select" name="expSelectFrom">
+                                            <option value="0" selected disabled hidden>год</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2006">2006</option>
+                                        </select>
                                     </div>
                                     <div class="period-wrap">
                                         До
-                                        <div class="custom-select">
-                                            <select name="expSelectTo">
-                                                <option value="">год</option>
-                                                <option value="1999">1999</option>
-                                                <option value="2000">2000</option>
-                                                <option value="2001">2001</option>
-                                                <option value="2002">2002</option>
-                                                <option value="2003">2003</option>
-                                                <option value="2005">2005</option>
-                                                <option value="2006">2006</option>
-                                            </select>
-                                        </div>
+                                        <select class="form-select" name="expSelectFrom">
+                                            <option value="0" selected disabled hidden>год</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2006">2006</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="expirience-blocks-new">
-                        <div class="exp-content__row block-for-remove">
-                            <div class="exp-content__row__left">
-                            
-                            </div>
-                            <div class="exp-content__row__right">
-                                <button type="button" id="removeExpBlock" class="btn btn-danger">Удалить</button>
                             </div>
                         </div>
                     </div>
@@ -275,14 +261,11 @@
                                 </label>
                             </div>
                             <div class="exp-content__row__right">
-                                <div class="custom-select">
-                                    <select id="expSelectFrom" name="langName">
-                                        <option value="0">...</option>
-                                        <option value="Английський">Английський</option>
-                                        <option value="Немецкий">Немецкий</option>
-                                        <option value="Украинский">Украинский</option>
-                                    </select>
-                                </div>
+                                <select class="form-select" name="langName">
+                                    <option value="Английський">Английський</option>
+                                    <option value="Немецкий">Немецкий</option>
+                                    <option value="Украинский">Украинский</option>
+                                </select>
                             </div>
                         </div>
     
@@ -295,35 +278,23 @@
                             <div class="exp-content__row__right">
                                 <div class="period period--langs">
                                     <div class="period-wrap">
-                                        <div class="custom-select">
-                                            <select name="langSelectFrom">
-                                                <option value="">...</option>
-                                                <option value="a1">a1</option>
-                                                <option value="a2">a2</option>
-                                                <option value="b1">b1</option>
-                                                <option value="b2">b2</option>
-                                                <option value="c1">c1</option>
-                                                <option value="c2">c2</option>
-                                            </select>
-                                        </div>
+                                        
+                                        <select class="form-select" name="langSelectFrom">
+                                           
+                                            <option value="a1">a1</option>
+                                            <option value="a2">a2</option>
+                                            <option value="b1">b1</option>
+                                            <option value="b2">b2</option>
+                                            <option value="c1">c1</option>
+                                            <option value="c2">c2</option>
+                                        </select>
+                                        
                                     </div>
                                     
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="expirience-blocks-lang-new">
-                        <div class="exp-content__row block-for-remove">
-                            <div class="exp-content__row__left">
-                            
-                            </div>
-                            <div class="exp-content__row__right">
-                                <button type="button" id="removeLangBlock" class="btn btn-danger">Удалить</button>
-                            </div>
-                        </div>
-                    </div>
-                    
 
                     <div class="exp-content__row">
                         <div class="exp-content__row__left">

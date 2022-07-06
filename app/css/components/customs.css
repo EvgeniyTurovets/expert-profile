@@ -187,8 +187,14 @@ input.yellow-error-input::placeholder {
   margin-left: 10px;
   font-weight: 500;
 }
+.period .period-wrap .form-select {
+  width: 150px;
+  margin-right: 15px;
+  margin-left: 10px;
+  font-weight: 500;
+}
 
-.period--langs .period-wrap .custom-select {
+.period--langs .period-wrap .custom-select, .period--langs .period-wrap .form-select {
   margin-left: 0;
 }
 

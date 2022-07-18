@@ -137,7 +137,8 @@
     display: flex;
     justify-content: center;
     svg{
-        margin-right: 12px;
+        margin-right: 6px;
+        margin-left: 6px;
     }
 }
 .exp-profile__person__label-wrap{
@@ -168,7 +169,8 @@
 .exp-profile__tabs__content{
     display: none;
     background-color: #fff;
-    padding-left: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 10px;
 }
 .exp-profile__tabs__content.active{
@@ -179,6 +181,7 @@
     margin: 0;
     padding: 0;
     li{
+        max-width: 466px;
         padding: 22px 15px 15px;
         border-radius: 10px 10px 0px 0px;
         text-align: center;
@@ -453,6 +456,7 @@
     }
     .exp-profile__tabs__content{
         padding-left: 0;
+        padding-right: 0;
     }
     .exp-profile__uslugi__wrap{
         flex-direction: column;

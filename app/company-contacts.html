@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#F1F6FA">
   <title>New site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -143,45 +146,156 @@
 
 
     <main class="main">
-
-     <br><br>
+      <div class="sub-header">
+    <div class="wrap">
+      <nav class="sub-header__nav">
+        <ul>
+          <li>
+            <a href="" class="active">Найти проект</a>
+          </li>
+          <li>
+            <a href="">Текущие проекты</a>
+          </li>
+          <li>
+            <a href="">Статистика</a>
+          </li>
+          <li>
+            <a href="">Оплата</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+      
       <div class="wrap">
-        <div class="persons-list">
 
-          <div class="news-nav">
-            <nav class="page-sub-menu">
-              Профиль експерта
-              <ol>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="contacts.html" target="_blank">Contacts</a></li>
-                <li><a href="resume.html" target="_blank">Resume</a></li>
-                <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
-                <li><a href="portfolio-skills.html" target="_blank">Portfolio skills</a></li>
-                <li><a href="proekt.html" target="_blank">Proekt</a></li>
-                <li><a href="find-job.html" target="_blank">find job</a></li>
-                <li><a href="current-proekt.html" target="_blank">current proekt</a></li>
-                <li><a href="statistic.html" target="_blank">statistic</a></li>
-                <li><a href="profile.html" target="_blank">profile</a></li>
-                <li><a href="application.html" target="_blank">application</a></li>
-                <li><a href="help.html" target="_blank">help</a></li>
-              </ol>
+        <div class="exp-content exp-content--company">
+            <div class="exp-content__sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                        <div class="sidebar__name">ТЗоВ Александр Александров</div>
+                    </div>
+                   
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__nav__menu1">
+                            <li>
+                                <a href="">Просмотр профиля</a>
+                            </li>
+                            
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Редактировать профиль</span>
+                            </li>
+                            <li class="active">
+                                <a href="">Контактная информация
+                                    <svg width="24px" height="24px" class="open">
+                                        <use xlink:href="./img/sprite.svg#edit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Информация о компании</a>
+                            </li>
+                            <li>
+                                <a href="">Специализация компании</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="exp-content__edit">
+                <div class="exp-content__top">
+                    Редактирование контактной информации
+                </div>
 
-              Профиль компании
-              <ol>
-                <li><a href="company-contacts.html" target="_blank">company contacts</a></li>
-                <li><a href="company-about.html" target="_blank">company about</a></li>
-                <li><a href="company-sfera.html" target="_blank">company sfera</a></li>
-                <li><a href="company-profile.html" target="_blank">company profile</a></li>
-              </ol>
-            </nav>
-          </div>
+                <div class="exp-content__margin">
+                    <div class="exp-content__title">
+                        <h3>
+                            Контактная информация
+                        </h3>
+                    </div>
+                    <div class="exp-content__wrap">
+                        <div class="exp-content__row exp-content__row--phone">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Номер телефона
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input data-inputmask="'mask': '+380-99-999-99-99'" class="input mask" type="text" placeholder="+380">
+                            </div>
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Эллектронный адрес
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Страна
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <div class="js-selectize--mini-input">
+                                    <select placeholder="" id="newId">
+                                        <option value="" selected="selected"></option>
+                                        <option>Страна 1</option>
+                                        <option>Страна 2</option>
+                                        <option>Страна 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Город
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <div class="js-selectize--mini-input">
+                                    <select id="newId2" placeholder="">
+                                        <option value="" selected="selected"></option>
+                                        <option>Город 1</option>
+                                        <option>Город 2</option>
+                                        <option>Город 3</option>
+                                        <option>Город 4</option>
+                                        <option>Город 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Mесенджер
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input class="input" type="text">
+                                <button class="btn btn-primary" type="button">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
 
       </div>
-
     </main>
-
+    
     <footer class="footer">
     <div class="wrap">
         <div class="footer__wrap">
@@ -277,6 +391,40 @@
   <script type="text/javascript" src="libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script>
+    $("#newId").selectize({
+        persist: true,
+        onDropdownOpen: function(){
+            var value = this.getValue();
+            this.clear();
+            this.$control_input.val(value);
+        },
+        onChange: function(value){
+            console.log(value)
+        }
+    })
+
+    let townValue = ''
+    $("#newId2").selectize({
+        persist: true,
+        onDropdownOpen: function(){
+            var value = this.getValue();
+            this.clear();
+            this.$control_input.val(value);
+        },
+        onType: function(str){
+            townValue = str
+        },
+        onBlur: function(){
+            if(townValue.length > 0){
+                this.addOption({value: townValue,text:townValue});
+                this.addItem(townValue); 
+            }
+            townValue = ''
+        },
+    })
+</script>
 </body>
 
 

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#F1F6FA">
+  <title>New site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="app">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/sub-header.html')
+      
+      <div class="wrap">
+
+        <div class="exp-content exp-content--company">
+            <div class="exp-content__sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');"></div>
+                        <div class="sidebar__name">ТЗоВ Александр Александров</div>
+                    </div>
+                   
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__nav__menu1">
+                            <li>
+                                <a href="">Просмотр профиля</a>
+                            </li>
+                            
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Редактировать профиль</span>
+                            </li>
+                            <li class="active">
+                                <a href="">Контактная информация
+                                    <svg width="24px" height="24px" class="open">
+                                        <use xlink:href="./img/sprite.svg#edit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Информация о компании</a>
+                            </li>
+                            <li>
+                                <a href="">Специализация компании</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="exp-content__edit">
+                <div class="exp-content__top">
+                    Редактирование контактной информации
+                </div>
+
+                <div class="exp-content__margin">
+                    <div class="exp-content__title">
+                        <h3>
+                            Контактная информация
+                        </h3>
+                    </div>
+                    <div class="exp-content__wrap">
+                        <div class="exp-content__row exp-content__row--phone">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Номер телефона
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input data-inputmask="'mask': '+380-99-999-99-99'" class="input mask" type="text" placeholder="+380">
+                            </div>
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Эллектронный адрес
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Страна
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <div class="js-selectize--mini-input">
+                                    <select placeholder="" id="newId">
+                                        <option value="" selected="selected"></option>
+                                        <option>Страна 1</option>
+                                        <option>Страна 2</option>
+                                        <option>Страна 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Город
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <div class="js-selectize--mini-input">
+                                    <select id="newId2" placeholder="">
+                                        <option value="" selected="selected"></option>
+                                        <option>Город 1</option>
+                                        <option>Город 2</option>
+                                        <option>Город 3</option>
+                                        <option>Город 4</option>
+                                        <option>Город 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-content__row">
+                            <div class="exp-content__row__left">
+                                <label class="label">
+                                    Mесенджер
+                                </label>
+                            </div>
+                            <div class="exp-content__row__right">
+                                <input class="input" type="text">
+                                <button class="btn btn-primary" type="button">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+    </main>
+    
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script>
+    $("#newId").selectize({
+        persist: true,
+        onDropdownOpen: function(){
+            var value = this.getValue();
+            this.clear();
+            this.$control_input.val(value);
+        },
+        onChange: function(value){
+            console.log(value)
+        }
+    })
+
+    let townValue = ''
+    $("#newId2").selectize({
+        persist: true,
+        onDropdownOpen: function(){
+            var value = this.getValue();
+            this.clear();
+            this.$control_input.val(value);
+        },
+        onType: function(str){
+            townValue = str
+        },
+        onBlur: function(){
+            if(townValue.length > 0){
+                this.addOption({value: townValue,text:townValue});
+                this.addItem(townValue); 
+            }
+            townValue = ''
+        },
+    })
+</script>
+</body>
+
+
+</html>

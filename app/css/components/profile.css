@@ -144,7 +144,8 @@
   justify-content: center;
 }
 .exp-profile__person__rate svg {
-  margin-right: 12px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .exp-profile__person__label-wrap {
@@ -177,7 +178,8 @@
 .exp-profile__tabs__content {
   display: none;
   background-color: #fff;
-  padding-left: 29px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
 }
 
@@ -191,6 +193,7 @@
   padding: 0;
 }
 .exp-profile__tabs__nav li {
+  max-width: 466px;
   padding: 22px 15px 15px;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
@@ -493,6 +496,7 @@
 
   .exp-profile__tabs__content {
     padding-left: 0;
+    padding-right: 0;
   }
 
   .exp-profile__uslugi__wrap {

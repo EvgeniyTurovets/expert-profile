@@ -4760,7 +4760,6 @@ label.upload-wrap__col:hover {
 }
 
 .auth {
-  height: 100%;
   overflow: auto;
   background: #F4F7FF;
 }

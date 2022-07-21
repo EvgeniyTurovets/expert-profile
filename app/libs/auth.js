@@ -43,4 +43,7 @@ $(document).ready(function(){
             this.clear();
         }
     })
+	if(document.querySelectorAll(".mask").length){
+        Inputmask().mask(document.querySelectorAll(".mask"));
+    }
 });

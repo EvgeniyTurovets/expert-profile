@@ -53,6 +53,12 @@ body{
 .tabs__item.active{
     display: block;
 }
+.fancybox__container{
+    z-index: 1060;
+}
+.exp-modal-prof--portfolio{
+    z-index: 1059;
+}
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/footer";

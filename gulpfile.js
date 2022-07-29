@@ -97,11 +97,13 @@ const images = () => {
 		'./src/img/**.jpg',
 		'./src/img/**.png',
 		'./src/img/**.jpeg',
+    './src/img/**.webp',
 		'./src/img/*.svg',
     './src/img/**/*.svg',
 		'./src/img/**/*.jpg',
 		'./src/img/**/*.png',
-		'./src/img/**/*.jpeg'
+		'./src/img/**/*.jpeg',
+    './src/img/**/*.webp'
 		])
     .pipe(gulpif(isProd, image()))
     .pipe(dest('./app/img'))

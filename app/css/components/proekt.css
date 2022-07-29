@@ -659,7 +659,7 @@
 
   .proekt__content__top {
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
 
   .proekt__content__bot {

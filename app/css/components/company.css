@@ -296,4 +296,31 @@
     padding-top: 15px;
   }
 }
+.puclic-project {
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
+  padding-bottom: 41px;
+}
+
+.now-proekt__empty--public {
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+.now-proekt__empty--public__wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+@media (max-width: 991px) {
+  .now-proekt__empty--public {
+    padding-bottom: 35px;
+  }
+
+  .now-proekt__empty--public__wrap {
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=company.css.map */

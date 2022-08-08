@@ -193,7 +193,11 @@
         min-width: 13.2px;
         min-height: 13.2px;
     }
+    .active-svg{
+        display: none;
+    }
 }
+
 .selectize-input.dropdown-active::before {
     display: none;
 }
@@ -216,6 +220,15 @@
 .proekt__actios button:hover, .proekt__actios button.active{
     background-color: #F1F6FA;
     color: var(--color-blue);
+}
+
+.proekt__actios button.active{
+    svg{
+        display: none;
+    }
+    .active-svg{
+        display: block;
+    }
 }
 
 .proekt__content{

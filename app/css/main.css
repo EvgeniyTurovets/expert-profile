@@ -2325,6 +2325,9 @@ label.upload-wrap__col:hover {
   min-width: 13.2px;
   min-height: 13.2px;
 }
+.proekt__actios .active-svg {
+  display: none;
+}
 
 .selectize-input.dropdown-active::before {
   display: none;
@@ -2348,6 +2351,13 @@ label.upload-wrap__col:hover {
 .proekt__actios button:hover, .proekt__actios button.active {
   background-color: #F1F6FA;
   color: var(--color-blue);
+}
+
+.proekt__actios button.active svg {
+  display: none;
+}
+.proekt__actios button.active .active-svg {
+  display: block;
 }
 
 .proekt__content {

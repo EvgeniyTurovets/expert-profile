@@ -52,6 +52,7 @@
 .exp-content__wrap--sfera .form-select {
   max-width: 494px;
   margin-bottom: 20px;
+  padding: 7px 16px;
 }
 
 .sfera__limit {

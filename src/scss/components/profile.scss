@@ -254,6 +254,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .exp-profile__uslugi__link{
     font-weight: 600;
     font-size: 18px;
@@ -697,7 +698,18 @@
 .pinfile__item:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-
+.pinfile__item.pinfile__item--pdf{
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 11px;
+    border: 0;
+    img{
+        margin-bottom: 5px;
+        width: 40px;
+        height: auto;
+    }
+}
 @media(max-width: 500px){
     .pinfile{
         margin: 0 -15px;

@@ -336,8 +336,7 @@ body {
   text-align: center;
 }
 .sub-header__nav a:hover {
-  background: #F0F2F5;
-  color: #022964;
+  color: #0F47C0;
 }
 .sub-header__nav a.active {
   background: #F0F2F5;
@@ -978,10 +977,6 @@ body {
   border-bottom: 1px solid #AFACB9;
   max-width: 205px;
   margin-bottom: 26px;
-}
-
-.sidebar__nav__menu1 a {
-  color: #092C9E;
 }
 
 .sidebar__nav li.active a {

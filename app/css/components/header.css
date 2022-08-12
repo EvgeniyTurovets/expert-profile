@@ -198,8 +198,7 @@
   text-align: center;
 }
 .sub-header__nav a:hover {
-  background: #F0F2F5;
-  color: #022964;
+  color: #0F47C0;
 }
 .sub-header__nav a.active {
   background: #F0F2F5;

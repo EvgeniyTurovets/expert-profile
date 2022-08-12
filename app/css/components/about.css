@@ -244,10 +244,6 @@
   margin-bottom: 26px;
 }
 
-.sidebar__nav__menu1 a {
-  color: #092C9E;
-}
-
 .sidebar__nav li.active a {
   color: #092C9E;
   display: flex;

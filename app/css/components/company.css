@@ -59,6 +59,8 @@
   line-height: 24px;
   color: rgba(0, 0, 0, 0.8);
   background-size: 10px;
+  border: 1px solid #D7D6DC;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
   background-position: right 21px center;
 }
 

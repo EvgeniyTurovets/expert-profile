@@ -138,9 +138,8 @@
 }
 
 .done-work {
-  padding-left: 29px;
+  padding-left: 15px;
   padding-right: 0;
-  margin-left: 15px;
   margin-right: -15px;
 }
 .done-work .exp-content__title {
@@ -190,6 +189,15 @@
   padding-bottom: 117px;
 }
 
+@media (min-width: 768px) {
+  .done-work .exp-content__title {
+    padding-left: 29px;
+  }
+
+  .done-work__item {
+    padding-left: 29px;
+  }
+}
 .exp-modal-prof--company .exp-profile__col--right {
   justify-content: center;
 }

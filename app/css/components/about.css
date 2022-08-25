@@ -206,6 +206,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
+  text-align: center;
+  max-width: 230px;
 }
 
 .sidebar__nav ul {

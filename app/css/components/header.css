@@ -336,9 +336,10 @@
 }
 .header__right__btn.have-mess .have-mess__text {
   position: absolute;
-  right: 0;
+  right: auto;
+  left: 100%;
   bottom: 0;
-  transform: translate(5px, -2px);
+  transform: translateX(-10px);
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -377,7 +378,7 @@
 }
 @media (max-width: 374px) {
   .header__right__btn.have-mess .have-mess__text {
-    right: -1px;
+    transform: translateX(-5px);
   }
 
   .have-mess.tooltips-wrap .tooltips {

@@ -474,9 +474,10 @@ body {
 }
 .header__right__btn.have-mess .have-mess__text {
   position: absolute;
-  right: 0;
+  right: auto;
+  left: 100%;
   bottom: 0;
-  transform: translate(5px, -2px);
+  transform: translateX(-10px);
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -515,7 +516,7 @@ body {
 }
 @media (max-width: 374px) {
   .header__right__btn.have-mess .have-mess__text {
-    right: -1px;
+    transform: translateX(-5px);
   }
 
   .have-mess.tooltips-wrap .tooltips {
@@ -941,6 +942,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
+  text-align: center;
+  max-width: 230px;
 }
 
 .sidebar__nav ul {
@@ -2596,7 +2599,7 @@ label.upload-wrap__col:hover {
   align-items: center;
   text-align: center;
   color: #3C64B1;
-  margin-right: 11px;
+  margin-right: 10px;
   padding: 8px 16px;
   background: #DBEEFB;
   border-radius: 20px;
@@ -4854,9 +4857,8 @@ label.upload-wrap__col:hover {
 }
 
 .done-work {
-  padding-left: 29px;
+  padding-left: 15px;
   padding-right: 0;
-  margin-left: 15px;
   margin-right: -15px;
 }
 .done-work .exp-content__title {
@@ -4906,6 +4908,15 @@ label.upload-wrap__col:hover {
   padding-bottom: 117px;
 }
 
+@media (min-width: 768px) {
+  .done-work .exp-content__title {
+    padding-left: 29px;
+  }
+
+  .done-work__item {
+    padding-left: 29px;
+  }
+}
 .exp-modal-prof--company .exp-profile__col--right {
   justify-content: center;
 }

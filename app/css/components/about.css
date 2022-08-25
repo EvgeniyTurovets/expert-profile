@@ -1016,4 +1016,14 @@ h3 {
   background-size: 12px;
   cursor: pointer;
 }
+
+.form-select:focus {
+  outline: 1px solid #000;
+  box-shadow: none;
+}
+
+.form-select.form-select--mini {
+  padding: 7px 16px;
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=about.css.map */

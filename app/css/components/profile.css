@@ -685,6 +685,9 @@
   .exp-prof__action .proekt__actios {
     margin-top: 0;
   }
+  .exp-prof__action .proekt__actios button {
+    margin: 0 7px;
+  }
   .exp-prof__action .btn {
     margin-bottom: 15px;
     margin-left: 0;

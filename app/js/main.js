@@ -132,5 +132,8 @@ $(function () {
     $(this).addClass('active');
     $('#prpb__category__wrap').addClass('active');
   });
+  $('#prpb-textarea').on('input', function () {
+    $('#prpb-textarea-count').html($(this).val().length);
+  });
 });
 //# sourceMappingURL=main.js.map

@@ -113,6 +113,24 @@ $(function () {
   });
   $('.form-check-input__another').on('change', function () {
     $('#form-check-input__another').fadeToggle(200);
+  }); // Публікація проєкта
+
+  $('#prpb__name').on('blur', function () {
+    $(this).next('.prpb__error').html('');
+
+    if ($(this).val().length < 2) {
+      $(this).next('.prpb__error').append('<div class="prpb__error__item">Название должно содержать не менее 2 слов</div>');
+    }
+
+    if (!$(this).val().match(/[a-z]/)) {
+      $(this).next('.prpb__error').append('<div class="prpb__error__item">Название не может состоять только из заглавных букв</div>');
+    } else {
+      $(this).next('.prpb__error').html('');
+    }
+  });
+  $('#prpb__category__btn').on('click', function () {
+    $(this).addClass('active');
+    $('#prpb__category__wrap').addClass('active');
   });
 });
 //# sourceMappingURL=main.js.map

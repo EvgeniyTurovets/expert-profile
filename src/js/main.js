@@ -159,5 +159,10 @@ $(function(){
     $('#prpb-textarea').on('input', function(){
         $('#prpb-textarea-count').html($(this).val().length)
     })
+
+    $('.prpb__acordion__head').on('click', function(){
+        $(this).toggleClass('active')
+        $(this).next('.prpb__acordion__body').slideToggle(300)
+    })
 })
 

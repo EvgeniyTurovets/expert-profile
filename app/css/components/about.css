@@ -168,12 +168,12 @@
 }
 
 .exp-content__sidebar {
-  flex: 0 0 290px;
+  width: 0 0 290px;
   margin-right: 20px;
 }
 
 .exp-content__edit {
-  flex: 1;
+  width: calc(100% - 290px);
   padding: 12px;
   background-color: #fff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
@@ -638,7 +638,11 @@ h3 {
 }
 @media (max-width: 991px) {
   .exp-content__sidebar {
-    flex: 0 0 200px;
+    width: 200px;
+  }
+
+  .exp-content__edit {
+    width: calc(100% - 200px);
   }
 
   .sidebar__img {
@@ -711,6 +715,10 @@ h3 {
     width: 100%;
     margin-right: 0;
     margin-bottom: 25px;
+  }
+
+  .exp-content__edit {
+    width: 100%;
   }
 
   .sidebar {

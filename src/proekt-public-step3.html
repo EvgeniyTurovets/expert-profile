@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#F1F6FA">
+    <title>New site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="app">
+        @include('partials/header.html')
+
+        <main class="main">
+            @include('partials/sub-header.html')
+
+            <div class="wrap">
+                <nav class="prpb__breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="">Главная</a>
+                        </li>
+                        <li>
+                            <a href="">Профиль</a>
+                        </li>
+                        <li>
+                            <span>Публикация проекта</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="exp-content exp-content--prbp">
+                    <div class="exp-content__sidebar">
+                        <div class="sidebar">
+                            <div class="sidebar__top">
+                                <div class="sidebar__img" style="background-image: url('./img/about/avatar.jpg');">
+                                </div>
+                                <div class="sidebar__name">ФОП Александр Александров</div>
+                            </div>
+
+                            <nav class="sidebar__nav">
+                                <ul class="sidebar__nav__menu1">
+                                    <li>
+                                        <a href="">Просмотр профиля</a>
+                                    </li>
+
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">Название</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Описание</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="">Детали
+                                            <svg width="24px" height="24px" class="open">
+                                                <use xlink:href="./img/sprite.svg#edit"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Бюджет</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Просмотр</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="exp-content__edit">
+                        <div class="prpb">
+                            <div class="exp-content__top">
+                                Публикация проекта
+                            </div>
+                            <form class="prpb__wrap">
+                                <div class="prpb__name">Детали проекта </div>
+                                <div class="prpb__body">
+                                    <div class="prpb__label">
+                                        Специализация эксперта
+                                    </div>
+                                    <div class="prpb__detail__text">
+                                        Выберите одну или несколько специализаций эксперта, которые максимально
+                                        соответствуют вашему проекту
+                                    </div>
+
+                                    <div class="prpb__detail__wrap">
+                                        <div class="prpb__detail__col">
+                                            <div class="prpb__acordion">
+                                                <div class="prpb__acordion__row">
+                                                    <div class="prpb__acordion__head">
+                                                        <span class="prpb__acordion__checkbox"></span>
+                                                        IT
+                                                    </div>
+                                                    <div class="prpb__acordion__body">
+                                                        <ul>
+                                                            <li class="active">
+                                                                Administration
+                                                            </li>
+                                                            <li>
+                                                                Data Science & Analytics
+                                                            </li>
+                                                            <li>
+                                                                Business applications
+                                                            </li>
+                                                            <li>
+                                                                Програмування
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="prpb__acordion__row">
+                                                    <div class="prpb__acordion__head">
+                                                        <span class="prpb__acordion__checkbox"></span>
+                                                        Маркетинг
+                                                    </div>
+                                                    <div class="prpb__acordion__body">
+                                                        <ul>
+                                                            <li class="active">
+                                                                Administration
+                                                            </li>
+                                                            <li>
+                                                                Data Science & Analytics
+                                                            </li>
+                                                            <li>
+                                                                Business applications
+                                                            </li>
+                                                            <li>
+                                                                Програмування
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="prpb__acordion__row">
+                                                    <div class="prpb__acordion__head">
+                                                        <span class="prpb__acordion__checkbox"></span>
+                                                        Дизайн
+                                                    </div>
+                                                    <div class="prpb__acordion__body">
+                                                        <ul>
+                                                            <li class="active">
+                                                                Administration
+                                                            </li>
+                                                            <li>
+                                                                Data Science & Analytics
+                                                            </li>
+                                                            <li>
+                                                                Business applications
+                                                            </li>
+                                                            <li>
+                                                                Програмування
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="prpb__acordion__row">
+                                                    <div class="prpb__acordion__head">
+                                                        <span class="prpb__acordion__checkbox"></span>
+                                                        Финансы и бух услуги
+                                                    </div>
+                                                    <div class="prpb__acordion__body">
+                                                        <ul>
+                                                            <li class="active">
+                                                                Administration
+                                                            </li>
+                                                            <li>
+                                                                Data Science & Analytics
+                                                            </li>
+                                                            <li>
+                                                                Business applications
+                                                            </li>
+                                                            <li>
+                                                                Програмування
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="prpb__acordion__row">
+                                                    <div class="prpb__acordion__head">
+                                                        <span class="prpb__acordion__checkbox"></span>
+                                                        Управление персоналом
+                                                    </div>
+                                                    <div class="prpb__acordion__body">
+                                                        <ul>
+                                                            <li class="active">
+                                                                Administration
+                                                            </li>
+                                                            <li>
+                                                                Data Science & Analytics
+                                                            </li>
+                                                            <li>
+                                                                Business applications
+                                                            </li>
+                                                            <li>
+                                                                Програмування
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prpb__detail__col">
+                                            <ul class="prbp__detail__wich">
+                                                <li class="active">
+                                                    Network and system administration
+                                                </li>
+                                                <li>
+                                                    Cyber security
+                                                </li>
+                                                <li>
+                                                    Database administration
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prpb__detail__col">
+                                            <div class="prbp__detail__tags">
+                                                <div class="prbp__detail__tags__title">Выбранные навыки</div>
+                                                <div class="prbp__detail__tags__item">
+                                                    Network and system administration
+                                                    <button type="button">
+                                                        <svg width="14px" height="14px">
+                                                            <use xlink:href="./img/sprite.svg#close2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="prbp__detail__tags__item">
+                                                    Network
+                                                    <button type="button">
+                                                        <svg width="14px" height="14px">
+                                                            <use xlink:href="./img/sprite.svg#close2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="prbp__detail__tags__item">
+                                                    Network
+                                                    <button type="button">
+                                                        <svg width="14px" height="14px">
+                                                            <use xlink:href="./img/sprite.svg#close2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="prbp__detail__tags__item">
+                                                    Network and system administration
+                                                    <button type="button">
+                                                        <svg width="14px" height="14px">
+                                                            <use xlink:href="./img/sprite.svg#close2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prpb__footer">
+                                    <button class="btn btn-primary" type="submit">Далее</button>
+                                    <a class="btn btn-outline-primary" href="">Отменить</a>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+
+</html>

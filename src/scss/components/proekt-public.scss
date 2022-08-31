@@ -838,6 +838,12 @@
         .selectize-control.single .selectize-input{
             height: 48px;
             border-radius: 15px;
+            &.dropdown-active{
+                border-radius:  15px 15px 0px 0px;
+            }
+        }
+        .selectize-dropdown{
+            border-radius: 0px 0px 15px 15px;
         }
         .selectize-input:after {
             content: "";
@@ -866,6 +872,12 @@
     .selectize-control.single .selectize-input{
         height: 48px;
         border-radius: 15px;
+        &.dropdown-active{
+            border-radius:  15px 15px 0px 0px;
+        }
+    }
+    .selectize-dropdown{
+        border-radius: 0px 0px 15px 15px;
     }
     .selectize-input:after {
         content: "";

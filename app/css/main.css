@@ -7018,6 +7018,12 @@ a.auth__reg-width__fb:hover {
   height: 48px;
   border-radius: 15px;
 }
+.prpb__add-lang .prpb__add-lang__wrap .selectize-control.single .selectize-input.dropdown-active {
+  border-radius: 15px 15px 0px 0px;
+}
+.prpb__add-lang .prpb__add-lang__wrap .selectize-dropdown {
+  border-radius: 0px 0px 15px 15px;
+}
 .prpb__add-lang .prpb__add-lang__wrap .selectize-input:after {
   content: "";
   display: block;
@@ -7039,6 +7045,12 @@ a.auth__reg-width__fb:hover {
 .performer .selectize-control.single .selectize-input {
   height: 48px;
   border-radius: 15px;
+}
+.performer .selectize-control.single .selectize-input.dropdown-active {
+  border-radius: 15px 15px 0px 0px;
+}
+.performer .selectize-dropdown {
+  border-radius: 0px 0px 15px 15px;
 }
 .performer .selectize-input:after {
   content: "";

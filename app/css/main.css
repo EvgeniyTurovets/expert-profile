@@ -18,6 +18,118 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Black.eot");
+  src: local("Mulish Black"), local("../fonts/mulish/Mulish-Black"), url("../fonts/mulish/Mulish-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Black.woff2") format("woff2"), url("../fonts/mulish/Mulish-Black.woff") format("woff"), url("../fonts/mulish/Mulish-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-BlackItalic.eot");
+  src: local("Mulish Black Italic"), local("../fonts/mulish/Mulish-BlackItalic"), url("../fonts/mulish/Mulish-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-BlackItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-BlackItalic.woff") format("woff"), url("../fonts/mulish/Mulish-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraBoldItalic.eot");
+  src: local("Mulish ExtraBold Italic"), local("../fonts/mulish/Mulish-ExtraBoldItalic"), url("../fonts/mulish/Mulish-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraBoldItalic.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-MediumItalic.eot");
+  src: local("Mulish Medium Italic"), local("../fonts/mulish/Mulish-MediumItalic"), url("../fonts/mulish/Mulish-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-MediumItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-MediumItalic.woff") format("woff"), url("../fonts/mulish/Mulish-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Medium.eot");
+  src: local("Mulish Medium"), local("../fonts/mulish/Mulish-Medium"), url("../fonts/mulish/Mulish-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Medium.woff2") format("woff2"), url("../fonts/mulish/Mulish-Medium.woff") format("woff"), url("../fonts/mulish/Mulish-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-SemiBoldItalic.eot");
+  src: local("Mulish SemiBold Italic"), local("../fonts/mulish/Mulish-SemiBoldItalic"), url("../fonts/mulish/Mulish-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-SemiBoldItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-SemiBoldItalic.woff") format("woff"), url("../fonts/mulish/Mulish-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-BoldItalic.eot");
+  src: local("Mulish Bold Italic"), local("../fonts/mulish/Mulish-BoldItalic"), url("../fonts/mulish/Mulish-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-BoldItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-BoldItalic.woff") format("woff"), url("../fonts/mulish/Mulish-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraBold.eot");
+  src: local("Mulish ExtraBold"), local("../fonts/mulish/Mulish-ExtraBold"), url("../fonts/mulish/Mulish-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraBold.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraBold.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-LightItalic.eot");
+  src: local("Mulish Light Italic"), local("../fonts/mulish/Mulish-LightItalic"), url("../fonts/mulish/Mulish-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-LightItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-LightItalic.woff") format("woff"), url("../fonts/mulish/Mulish-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Light.eot");
+  src: local("Mulish Light"), local("../fonts/mulish/Mulish-Light"), url("../fonts/mulish/Mulish-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Light.woff2") format("woff2"), url("../fonts/mulish/Mulish-Light.woff") format("woff"), url("../fonts/mulish/Mulish-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Bold.eot");
+  src: local("Mulish Bold"), local("../fonts/mulish/Mulish-Bold"), url("../fonts/mulish/Mulish-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Bold.woff2") format("woff2"), url("../fonts/mulish/Mulish-Bold.woff") format("woff"), url("../fonts/mulish/Mulish-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraLightItalic.eot");
+  src: local("Mulish ExtraLight Italic"), local("../fonts/mulish/Mulish-ExtraLightItalic"), url("../fonts/mulish/Mulish-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraLightItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraLightItalic.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Regular.eot");
+  src: local("Mulish Regular"), local("../fonts/mulish/Mulish-Regular"), url("../fonts/mulish/Mulish-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Regular.woff2") format("woff2"), url("../fonts/mulish/Mulish-Regular.woff") format("woff"), url("../fonts/mulish/Mulish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraLight.eot");
+  src: local("Mulish ExtraLight"), local("../fonts/mulish/Mulish-ExtraLight"), url("../fonts/mulish/Mulish-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraLight.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraLight.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Italic.eot");
+  src: local("Mulish Italic"), local("../fonts/mulish/Mulish-Italic"), url("../fonts/mulish/Mulish-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Italic.woff2") format("woff2"), url("../fonts/mulish/Mulish-Italic.woff") format("woff"), url("../fonts/mulish/Mulish-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-SemiBold.eot");
+  src: local("Mulish SemiBold"), local("../fonts/mulish/Mulish-SemiBold"), url("../fonts/mulish/Mulish-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/mulish/Mulish-SemiBold.woff") format("woff"), url("../fonts/mulish/Mulish-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 html {
   box-sizing: border-box;
 }
@@ -181,7 +293,7 @@ body {
 }
 .header__search button {
   position: absolute;
-  left: 20px;
+  left: 7px;
   top: 50%;
   transform: translateY(-50%);
   width: 35px;
@@ -204,7 +316,7 @@ body {
   border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   height: 48px;
-  padding-left: 72px;
+  padding-left: 41px;
   padding-right: 15px;
   font-size: 14px;
   line-height: 20px;
@@ -2420,7 +2532,6 @@ label.upload-wrap__col:hover {
 .selectize-control.single .selectize-input.dropdown-active {
   border-radius: 20px 20px 0 0;
   border: 2px solid #2b5cfb;
-  padding-left: 50px;
 }
 
 .selectize-input, .selectize-control.single .selectize-input.input-active {
@@ -6651,6 +6762,13 @@ a.auth__reg-width__fb:hover {
   line-height: 24px;
   color: #2D9CDB;
 }
+.prpb__blue-check.prpb__blue-check--dark input:checked + .prpb__blue-check__input {
+  background-color: #053FFA;
+  border: 2px solid #053FFA;
+}
+.prpb__blue-check.prpb__blue-check--dark .prpb__blue-check__text {
+  color: #053FFA;
+}
 
 @media (max-width: 1200px) {
   .prpb__type {
@@ -6677,6 +6795,7 @@ a.auth__reg-width__fb:hover {
   .prpb__type__item {
     width: 304px;
     max-width: 100%;
+    padding: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -6809,6 +6928,217 @@ a.auth__reg-width__fb:hover {
     padding: 20px 15px 34px;
   }
 }
+.choose__lang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.choose__lang__item {
+  background: #DBEEFB;
+  border-radius: 15px;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #053FFA;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-family: "Mulish";
+}
+.choose__lang__item button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin-left: 10px;
+  transition: 0.3s all;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.choose__lang__item button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.propose__lang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 46px;
+}
+
+.propose__lang__item {
+  background: #E5E5E5;
+  border-radius: 15px;
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Mulish";
+  color: #3C64B1;
+  cursor: pointer;
+}
+
+.prpb__add-lang__wrap {
+  margin-top: 14px;
+}
+
+.prpb__add-lang .hide-lang {
+  display: none;
+}
+.prpb__add-lang .prpb__add-lang__wrap {
+  display: none;
+  max-width: 630px;
+}
+.prpb__add-lang .prpb__add-lang__wrap .selectize-control.single .selectize-input {
+  height: 48px;
+  border-radius: 15px;
+}
+.prpb__add-lang .prpb__add-lang__wrap .selectize-input:after {
+  content: "";
+  display: block;
+}
+.prpb__add-lang.active .show-lang {
+  display: none;
+}
+.prpb__add-lang.active .hide-lang {
+  display: inline-flex;
+}
+.prpb__add-lang.active .prpb__add-lang__wrap {
+  display: block;
+}
+
+.performer {
+  margin-top: 22px;
+  max-width: 630px;
+}
+.performer .selectize-control.single .selectize-input {
+  height: 48px;
+  border-radius: 15px;
+}
+.performer .selectize-input:after {
+  content: "";
+  display: block !important;
+}
+
+.prpbSelectOption {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.prpbSelectImg {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 11px;
+}
+.prpbSelectImg img {
+  display: block;
+  width: 100%;
+}
+
+.prpbSelectName {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 2px;
+}
+
+.prpbSelectDes {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 767px) {
+  .prpbSelectDes {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.prpb__radios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 54px;
+  margin-top: 16px;
+  margin-bottom: 46px;
+}
+
+.prpb__radios__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.prpb__radios__item input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.prpb__radios__item .prpb__radios__input {
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  border: 2px solid #C3CBCD;
+  border-radius: 100%;
+  margin-right: 8px;
+  margin-top: 1px;
+}
+.prpb__radios__item input:checked + .prpb__radios__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prpb__radios__item input:checked + .prpb__radios__input:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #053FFA;
+  border-radius: 100%;
+}
+.prpb__radios__item input:focus + .prpb__radios__input {
+  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+.prpb__radios__item .prpb__radios__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.prpb__budget {
+  max-width: 316px;
+  position: relative;
+  font-family: "Mulish", sans-serif;
+}
+.prpb__budget .input {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  height: 48px;
+  border-radius: 15px;
+}
+.prpb__budget .prpb__budget__currency {
+  position: absolute;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #828282;
+  top: 12px;
+  right: 12px;
+}
+
 .js-selectize--mini-input .selectize-control.single .selectize-input {
   background-image: none !important;
   padding-left: 15px;

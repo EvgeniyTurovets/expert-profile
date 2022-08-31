@@ -1,4 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Black.eot");
+  src: local("Mulish Black"), local("../fonts/mulish/Mulish-Black"), url("../fonts/mulish/Mulish-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Black.woff2") format("woff2"), url("../fonts/mulish/Mulish-Black.woff") format("woff"), url("../fonts/mulish/Mulish-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-BlackItalic.eot");
+  src: local("Mulish Black Italic"), local("../fonts/mulish/Mulish-BlackItalic"), url("../fonts/mulish/Mulish-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-BlackItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-BlackItalic.woff") format("woff"), url("../fonts/mulish/Mulish-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraBoldItalic.eot");
+  src: local("Mulish ExtraBold Italic"), local("../fonts/mulish/Mulish-ExtraBoldItalic"), url("../fonts/mulish/Mulish-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraBoldItalic.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-MediumItalic.eot");
+  src: local("Mulish Medium Italic"), local("../fonts/mulish/Mulish-MediumItalic"), url("../fonts/mulish/Mulish-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-MediumItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-MediumItalic.woff") format("woff"), url("../fonts/mulish/Mulish-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Medium.eot");
+  src: local("Mulish Medium"), local("../fonts/mulish/Mulish-Medium"), url("../fonts/mulish/Mulish-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Medium.woff2") format("woff2"), url("../fonts/mulish/Mulish-Medium.woff") format("woff"), url("../fonts/mulish/Mulish-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-SemiBoldItalic.eot");
+  src: local("Mulish SemiBold Italic"), local("../fonts/mulish/Mulish-SemiBoldItalic"), url("../fonts/mulish/Mulish-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-SemiBoldItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-SemiBoldItalic.woff") format("woff"), url("../fonts/mulish/Mulish-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-BoldItalic.eot");
+  src: local("Mulish Bold Italic"), local("../fonts/mulish/Mulish-BoldItalic"), url("../fonts/mulish/Mulish-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-BoldItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-BoldItalic.woff") format("woff"), url("../fonts/mulish/Mulish-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraBold.eot");
+  src: local("Mulish ExtraBold"), local("../fonts/mulish/Mulish-ExtraBold"), url("../fonts/mulish/Mulish-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraBold.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraBold.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-LightItalic.eot");
+  src: local("Mulish Light Italic"), local("../fonts/mulish/Mulish-LightItalic"), url("../fonts/mulish/Mulish-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-LightItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-LightItalic.woff") format("woff"), url("../fonts/mulish/Mulish-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Light.eot");
+  src: local("Mulish Light"), local("../fonts/mulish/Mulish-Light"), url("../fonts/mulish/Mulish-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Light.woff2") format("woff2"), url("../fonts/mulish/Mulish-Light.woff") format("woff"), url("../fonts/mulish/Mulish-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Bold.eot");
+  src: local("Mulish Bold"), local("../fonts/mulish/Mulish-Bold"), url("../fonts/mulish/Mulish-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Bold.woff2") format("woff2"), url("../fonts/mulish/Mulish-Bold.woff") format("woff"), url("../fonts/mulish/Mulish-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraLightItalic.eot");
+  src: local("Mulish ExtraLight Italic"), local("../fonts/mulish/Mulish-ExtraLightItalic"), url("../fonts/mulish/Mulish-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraLightItalic.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraLightItalic.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Regular.eot");
+  src: local("Mulish Regular"), local("../fonts/mulish/Mulish-Regular"), url("../fonts/mulish/Mulish-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Regular.woff2") format("woff2"), url("../fonts/mulish/Mulish-Regular.woff") format("woff"), url("../fonts/mulish/Mulish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-ExtraLight.eot");
+  src: local("Mulish ExtraLight"), local("../fonts/mulish/Mulish-ExtraLight"), url("../fonts/mulish/Mulish-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-ExtraLight.woff2") format("woff2"), url("../fonts/mulish/Mulish-ExtraLight.woff") format("woff"), url("../fonts/mulish/Mulish-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-Italic.eot");
+  src: local("Mulish Italic"), local("../fonts/mulish/Mulish-Italic"), url("../fonts/mulish/Mulish-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-Italic.woff2") format("woff2"), url("../fonts/mulish/Mulish-Italic.woff") format("woff"), url("../fonts/mulish/Mulish-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/Mulish-SemiBold.eot");
+  src: local("Mulish SemiBold"), local("../fonts/mulish/Mulish-SemiBold"), url("../fonts/mulish/Mulish-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/mulish/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/mulish/Mulish-SemiBold.woff") format("woff"), url("../fonts/mulish/Mulish-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 .btn-prim-small {
   font-size: 14px;
   line-height: 20px;

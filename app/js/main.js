@@ -139,5 +139,11 @@ $(function () {
     $(this).toggleClass('active');
     $(this).next('.prpb__acordion__body').slideToggle(300);
   });
+  $('.prpb__add-lang .show-lang').on('click', function () {
+    $('.prpb__add-lang').addClass('active');
+  });
+  $('.prpb__add-lang .hide-lang').on('click', function () {
+    $('.prpb__add-lang').removeClass('active');
+  });
 });
 //# sourceMappingURL=main.js.map

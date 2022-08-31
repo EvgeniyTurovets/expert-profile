@@ -280,7 +280,6 @@
 .selectize-control.single .selectize-input.dropdown-active {
   border-radius: 20px 20px 0 0;
   border: 2px solid #2b5cfb;
-  padding-left: 50px;
 }
 
 .selectize-input, .selectize-control.single .selectize-input.input-active {

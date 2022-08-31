@@ -6266,7 +6266,6 @@ a.auth__reg-width__fb:hover {
 .prpb__category__wrap {
   display: none;
   flex-wrap: wrap;
-  gap: 0 96px;
 }
 .prpb__category__wrap.active {
   display: flex;
@@ -6274,6 +6273,9 @@ a.auth__reg-width__fb:hover {
 
 .prpb__category__col {
   padding-left: 5px;
+}
+.prpb__category__col:first-child {
+  margin-right: 96px;
 }
 
 .prpb__category__item {
@@ -6323,6 +6325,10 @@ a.auth__reg-width__fb:hover {
 }
 
 @media (max-width: 767px) {
+  .prpb__category__col:first-child {
+    margin-right: 0;
+  }
+
   .prpb__input {
     font-size: 16px;
     line-height: 24px;
@@ -6363,12 +6369,12 @@ a.auth__reg-width__fb:hover {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 10px 0;
   margin: 0;
   padding: 0;
 }
 .prpb__breadcrumb li {
   list-style: none;
+  margin-bottom: 10px;
   position: relative;
   display: flex;
   align-items: center;
@@ -6402,7 +6408,7 @@ a.auth__reg-width__fb:hover {
   }
 }
 .exp-content--prbp {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .prbp__ul {
@@ -6467,7 +6473,7 @@ a.auth__reg-width__fb:hover {
 
 .prpb__detail__wrap {
   display: flex;
-  gap: 8px;
+  margin: 0 -4px;
   width: 100%;
   height: 546px;
   max-height: calc(90vh - 90px);
@@ -6475,7 +6481,9 @@ a.auth__reg-width__fb:hover {
 }
 
 .prpb__detail__col {
-  width: 33.3333333333%;
+  width: calc(33.3333333333% - 8px);
+  margin-right: 4px;
+  margin-left: 4px;
   min-width: 300px;
   height: 100%;
   overflow: auto;
@@ -6654,7 +6662,6 @@ a.auth__reg-width__fb:hover {
 }
 .prpb__type {
   display: flex;
-  gap: 15px 52px;
   margin-top: 22px;
 }
 
@@ -6669,6 +6676,9 @@ a.auth__reg-width__fb:hover {
 }
 .prpb__type__item:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.prpb__type__item:first-child {
+  margin-right: 52px;
 }
 .prpb__type__item input {
   position: absolute;
@@ -6771,8 +6781,8 @@ a.auth__reg-width__fb:hover {
 }
 
 @media (max-width: 1200px) {
-  .prpb__type {
-    gap: 15px;
+  .prpb__type__item:first-child {
+    margin-right: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -6796,6 +6806,11 @@ a.auth__reg-width__fb:hover {
     width: 304px;
     max-width: 100%;
     padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .prpb__type__item:first-child {
+    margin-right: 0px;
   }
 }
 @media (max-width: 767px) {
@@ -6931,9 +6946,8 @@ a.auth__reg-width__fb:hover {
 .choose__lang {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
 
 .choose__lang__item {
@@ -6949,6 +6963,8 @@ a.auth__reg-width__fb:hover {
   margin-bottom: 5px;
   margin-right: 5px;
   font-family: "Mulish";
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 .choose__lang__item button {
   background-color: transparent;
@@ -6970,8 +6986,7 @@ a.auth__reg-width__fb:hover {
 .propose__lang {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 46px;
+  margin-bottom: 34px;
 }
 
 .propose__lang__item {
@@ -6984,6 +6999,8 @@ a.auth__reg-width__fb:hover {
   font-family: "Mulish";
   color: #3C64B1;
   cursor: pointer;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .prpb__add-lang__wrap {
@@ -7071,15 +7088,16 @@ a.auth__reg-width__fb:hover {
 .prpb__radios {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 54px;
   margin-top: 16px;
-  margin-bottom: 46px;
+  margin-bottom: 26px;
 }
 
 .prpb__radios__item {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-right: 54px;
+  margin-bottom: 20px;
 }
 .prpb__radios__item input {
   position: absolute;

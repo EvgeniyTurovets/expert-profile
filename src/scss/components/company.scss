@@ -334,3 +334,34 @@
         margin-top: 25px;
     }
 }
+
+.multi-selectize{
+    .selectize-control{
+        min-height: 48px;
+    }
+    .selectize-input{
+        border-radius: 15px;
+        min-height: 48px;
+    }
+    .selectize-control.multi .selectize-input [data-value]{
+        color: #053FFA;
+        background: #DBEEFB;
+        border-radius: 15px;
+        padding: 4px 10px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.4;
+        font-family: "Mulish";
+        border: 0;
+        min-width: max-content;
+    }
+    .selectize-control.multi .selectize-input.has-items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .selectize-control.plugin-remove_button .item .remove{
+        border-left: 0;
+        border-radius: 100%;
+        margin-right: 5px;
+    }
+}

@@ -257,19 +257,23 @@
                                         <div class="prpb__label">
                                             Выберите исполнителя
                                         </div>
-                                        <select id="performer__select" placeholder="Начните писать имя исполнителя">
-                                            <option value="" selected="selected"></option>
-                                            <option>Jennifer</option>
-                                            <option>Jenny</option>
-                                            <option>Jorge</option>
-                                            <option>Jorge Carlson</option>
-                                            <option>Ann Jennifer</option>
-                                            <option>Bobby Jenkins</option>
-                                            <option>Peter Jenkins</option>
-                                            <option>Fred</option>
-                                            <option>Kal</option>
-                                            <option>Louis</option>
-                                        </select>
+                                        <div class="multi-selectize">
+                                            <select multiple id="performer__select"
+                                                placeholder="Начните писать имя исполнителя">
+                                                <option value="" selected="selected"></option>
+                                                <option>Jennifer</option>
+                                                <option>Jenny</option>
+                                                <option>Jorge</option>
+                                                <option>Jorge Carlson</option>
+                                                <option>Ann Jennifer</option>
+                                                <option>Bobby Jenkins</option>
+                                                <option>Peter Jenkins</option>
+                                                <option>Fred</option>
+                                                <option>Kal</option>
+                                                <option>Louis</option>
+                                            </select>
+                                        </div>
+
                                     </div>
 
                                 </div>
@@ -385,12 +389,10 @@
 
     <script>
         $("#performer__select").selectize({
-            persist: true,
-            onDropdownOpen: function () {
-                var value = this.getValue();
-                this.clear();
-                this.$control_input.val(value);
-            },
+            persist: false,
+            delimiter: ",",
+            plugins: ['remove_button'],
+
             searchField: ['name'],
             onChange: function (value) {
                 console.log(value)
@@ -417,6 +419,12 @@
                         + '</div>'
                         + '</div>';
                 }
+            },
+            create: function (input) {
+                return {
+                    value: input,
+                    text: input,
+                };
             },
         })
     </script>

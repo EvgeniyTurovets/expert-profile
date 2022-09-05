@@ -358,6 +358,7 @@
     .selectize-control.multi .selectize-input.has-items{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
     .selectize-control.plugin-remove_button .item .remove{
         border-left: 0;

@@ -5218,6 +5218,7 @@ label.upload-wrap__col:hover {
 .multi-selectize .selectize-control.multi .selectize-input.has-items {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .multi-selectize .selectize-control.plugin-remove_button .item .remove {
   border-left: 0;

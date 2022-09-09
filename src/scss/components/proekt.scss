@@ -10,7 +10,7 @@
     font-size: 24px;
     line-height: 36px;
     color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 48px;
+    margin-bottom: 39px;
 }
 
 .filter__tabs{
@@ -42,6 +42,8 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
+    font-family: 'Mulish';
+    margin-bottom: 8px;
     letter-spacing: 0.1px;
     display: block;
     color: #737B7D;
@@ -49,8 +51,17 @@
 }
 
 .filter{
-    flex: 0 0 300px;
-    margin-right: 73px;
+    flex: 0 0 322px;
+    margin-right: 54px;
+    .form-select{
+        background-size: 10px;
+        background-position: right 1rem center;
+    }
+    .form-select:focus{
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
 }
 
 .input-search{
@@ -82,14 +93,15 @@
 }
 
 .filter__row{
-    margin-bottom: 27px;
+    margin-bottom: 32px;
 }
 .filter__checkboxes{
-    margin-bottom: 63px;
+    margin-bottom: 30px;
     .form-check-input{
         width: 1.3em;
         height: 1.3em;
-        border: 2px solid #C3CBCD
+        border: 2.5px solid #A1A4B1;
+        border-radius: 3px;
     }
     .form-check-input:checked{
         border: 2px solid #0d6efd;
@@ -112,6 +124,20 @@
     margin: 0;
     padding: 0;
     padding-top: 15px;
+    .btn{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F4F7FF;
+        background: #092C9E;
+        font-family: 'Montserrat';
+
+
+        &:hover{
+            color: #fff;
+            background: #0F47C0;
+        }
+    }
 }
 .filter__links li{
     list-style: none;
@@ -124,6 +150,7 @@
     color: #737B7D;
     font-weight: bold;
     transition: 0.3s all;
+    font-family: 'Mulish';
 }
 
 .filter__links a:hover{
@@ -712,7 +739,7 @@
     padding-left: 32px;
 }
 .proekt__list__top{
-    padding-top: 57px;
+    padding-top: 37px;
     font-weight: bold;
     font-size: 32px;
     line-height: 40px;

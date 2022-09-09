@@ -142,6 +142,7 @@
   margin-top: 17px;
   display: flex;
   justify-content: center;
+  color: #0F47C0;
 }
 .exp-profile__person__rate svg {
   margin-right: 6px;

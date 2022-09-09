@@ -2,22 +2,24 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#F1F6FA">
-  <title>New site</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#F1F6FA">
+    <title>New site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-  <div class="app">
-    <header class="header">
+    <div class="app">
+        <header class="header">
 	<div class="wrap">
 		<div class="header__wrap">
 			<div class="header__left">
@@ -161,8 +163,8 @@
 	</div>
 </header>
 
-    <main class="main">
-      <div class="sub-header">
+        <main class="main">
+            <div class="sub-header">
     <div class="wrap">
       <nav class="sub-header__nav">
         <ul>
@@ -182,62 +184,101 @@
       </nav>
     </div>
   </div>
-      
-      <div class="wrap">
-       
-        <div class="proekt">
-            <div class="filter">
+
+            <div class="wrap">
+                <div class="top-search">
+    <div class="top-search__left">
+        <nav class="prpb__breadcrumb">
+            <ul>
+                <li>
+                    <a href="">Главная</a>
+                </li>
+                <li>
+                    <span>Профиль</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="top-search__right">
+        <div class="proekt__search">
+            <div class="proekt__search__wrap">
+                <div class="selectize-search selectize-search--another-border">
+                    <svg width="17.5px" height="17.5px" class="top-search__icon">
+                        <use xlink:href="./img/sprite.svg#search"></use>
+                    </svg>
+                    <select class="js-selectize" placeholder="Найти проект">
+                        <option value="" selected="selected"></option>
+                        <option>Пример 1</option>
+                        <option>Пример 2</option>
+                        <option>Очень много букв пример Очень много букв пример для теста чень много
+                            букв пример для теста
+                        </option>
+
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-primary top-search__btn">
+                    Поиск
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+                <div class="proekt">
+                    <div class="filter">
     <div class="filter__title">
         Фильтры
     </div>
     <div class="filter__content">
-        <div class="filter__tabs">
-            <a href="" class="filter__tab active">Проекты</a>
-            <a href="" class="filter__tab">Конкурсы</a>
+
+        <div class="filter__row">
+            <label class="filter__label">Специализация эксперта</label>
+
+            <select class="form-select">
+                <option value="" hidden selected>Выберите специализацию эксперта</option>
+                <option value="1">Пример 1</option>
+                <option value="1">Пример 2</option>
+            </select>
+
         </div>
         <div class="filter__row">
-            <label class="filter__label">Категория</label>
-            <div class="selectize-search selectize-search--another-border">
-                <select class="js-selectize" placeholder="Начните писать категорию">
-                    <option value="" selected="selected"></option>
-                    <option>Навык 1</option>
-                    <option>Навык 2</option>
-                    <option>Навык 3</option>
-                    <option>Навык 4</option>
-                    <option>Навык 5</option>
-                    <option>Навык 6</option>
-                    <option>Навык 7</option>
-                    <option>Навык 8</option>
-                </select>
-            </div>
+            <label class="filter__label">Специализация 2 уровня</label>
+            <select class="form-select">
+                <option value="" hidden selected>Выберите специализацию</option>
+                <option value="1">Пример 1</option>
+                <option value="1">Пример 2</option>
+            </select>
         </div>
+
         <div class="filter__row">
             <label class="filter__label">Навыки</label>
-            <div class="selectize-search selectize-search--another-border">
-                <select class="js-selectize" placeholder="Начните писать навыки">
-                    <option value="" selected="selected"></option>
-                    <option>Навык 1</option>
-                    <option>Навык 2</option>
-                    <option>Навык 3</option>
-                    <option>Навык 4</option>
-                    <option>Навык 5</option>
-                    <option>Навык 6</option>
-                    <option>Навык 7</option>
-                    <option>Навык 8</option>
-                </select>
-            </div>
-            
+            <select class="form-select">
+                <option value="" hidden selected>Выберите навыки</option>
+                <option value="1">Пример 1</option>
+                <option value="1">Пример 2</option>
+            </select>
+        </div>
+
+        <div class="filter__row">
+            <label class="filter__label">Категория бизнеса</label>
+            <select class="form-select">
+                <option value="" hidden selected>Выберите категорию</option>
+                <option value="1">Пример 1</option>
+                <option value="1">Пример 2</option>
+            </select>
         </div>
 
         <div class="filter__row">
             <label class="filter__label">Страна</label>
-            <div class="custom-select custom-select--another-border">
-                <select>
-                    <option value="">Выберите страну</option>
-                    <option value="1">Страна 1</option>
-                    <option value="1">Страна 2</option>
-                </select>
-            </div>
+
+            <select class="form-select">
+                <option value="" hidden selected>Выберите страну</option>
+                <option value="1">Пример 1</option>
+                <option value="1">Пример 2</option>
+            </select>
         </div>
 
         <div class="filter__row">
@@ -271,49 +312,10 @@
         </div>
 
         <div class="filter__row">
-            <label class="filter__label">Опыт</label>
-            <div class="filter__checkboxes">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Специалист
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
-                    <label class="form-check-label" for="flexCheckChecked2">
-                        Профессионал
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
-                    <label class="form-check-label" for="flexCheckChecked3">
-                        Эксперт
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
-                    <label class="form-check-label" for="flexCheckChecked4">
-                        Топ-эксперт
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <div class="filter__row">
-            <label class="filter__label">Языки</label>
-            <div class="custom-select custom-select--another-border">
-                <select>
-                    <option value="">Начните вводить язык</option>
-                    <option>Язык 1</option>
-                    <option>Язык 2</option>
-                    <option>Язык 3</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="filter__row">
-            <ul class="filter__links"> 
+            <ul class="filter__links">
+                <li>
+                    <a href="" class="btn btn-primary">Применить фильтры</a>
+                </li>
                 <li>
                     <a href="">Сохранить фильтры</a>
                 </li>
@@ -324,153 +326,126 @@
         </div>
     </div>
 </div>
-            <div class="proekt__right">
-                <div class="proekt__search">
-                    <div class="selectize-search selectize-search--another-border">
-                        <select class="js-selectize" placeholder="Найти проект">
-                            <option value="" selected="selected"></option>
-                            <option>Навык 1</option>
-                            <option>Навык 2</option>
-                            <option>Навык 3</option>
-                            <option>Навык 4</option>
-                            <option>Навык 5</option>
-                            <option>Навык 6</option>
-                            <option>Навык 7</option>
-                            <option>Навык 8</option>
-                        </select>
-                        <div class="add-skills__tags">
-                            <div class="add-skills__tag">
-                                аналитика
-                                <button>
-                                    <svg width="10px" height="10px">
-                                        <use xlink:href="./img/sprite.svg#close2"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="add-skills__tag">
-                                продажи
-                                <button>
-                                    <svg width="10px" height="10px">
-                                        <use xlink:href="./img/sprite.svg#close2"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="proekt__detail">
-                    <div class="proekt__name">
-                        Дизайн логотипа для сайта
-                        <div class="proekt__actios">
-                            <button type="button">
-                                <svg width="13.2px" height="13.2px">
-                                    <use xlink:href="./img/sprite.svg#dislike"></use>
-                                </svg>
-                                <svg width="13.2px" height="13.2px" class="active-svg">
-                                    <use xlink:href="./img/sprite.svg#dislike-active"></use>
-                                </svg>
-                            </button>
-                            <button type="button">
-                                <svg width="13.2px" height="13.2px">
-                                    <use xlink:href="./img/sprite.svg#like"></use>
-                                </svg>
-                                <svg width="13.2px" height="13.2px" class="active-svg">
-                                    <use xlink:href="./img/sprite.svg#like-active"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+                    <div class="proekt__right">
 
-                    <div class="proekt__content">
-                        <div class="proekt__content__top">
-                            <div class="proekt__content__left">
-                                <div class="proekt__content__status">Заказчик </div>
-                                <div class="proekt__content__person">
-                                    <div class="proekt__content__avatar" style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
-                                    <div class="proekt__content__person__name">
-                                        Анастасия Александрова
-                                    </div>
-                                </div>
-                                <div class="proekt__tags">
-                                    <div class="proekt__tags__item">
-                                        <span class="">Оплата</span>
-                                        <span class="tags-point">
-                                            $30/час
-                                        </span>
-                                    </div>
-                                    <div class="proekt__tags__item">
-                                       
-                                        <span class="tags-point">
-                                            Топ-эксперт
-                                        </span>
-                                    </div>
-                                    <div class="proekt__tags__item">
-                                       
-                                        <span class="tags-point">
-                                            Юриспруденция
-                                        </span>
-                                    </div>
+
+                        <div class="proekt__detail">
+                            <div class="proekt__name">
+                                Дизайн логотипа для сайта
+                                <div class="proekt__actios">
+                                    <button type="button">
+                                        <svg width="13.2px" height="13.2px">
+                                            <use xlink:href="./img/sprite.svg#dislike"></use>
+                                        </svg>
+                                        <svg width="13.2px" height="13.2px" class="active-svg">
+                                            <use xlink:href="./img/sprite.svg#dislike-active"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button">
+                                        <svg width="13.2px" height="13.2px">
+                                            <use xlink:href="./img/sprite.svg#like"></use>
+                                        </svg>
+                                        <svg width="13.2px" height="13.2px" class="active-svg">
+                                            <use xlink:href="./img/sprite.svg#like-active"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="proekt__content__right">
-                                <div class="proekt__stat">
-                                    <div class="proekt__stat__status">Проект опубликован</div>
-                                    <div class="proekt__stat__item">
-                                        <img src="./img/proekt/thumbnail.png">
-                                        6 дней 23 часа назад
+
+                            <div class="proekt__content">
+                                <div class="proekt__content__top">
+                                    <div class="proekt__content__left">
+                                        <div class="proekt__content__status">Заказчик </div>
+                                        <div class="proekt__content__person">
+                                            <div class="proekt__content__avatar"
+                                                style="background-image: url('./img/proekt/avatar-default.jpg');"></div>
+                                            <div class="proekt__content__person__name">
+                                                Анастасия Александрова
+                                            </div>
+                                        </div>
+                                        <div class="proekt__tags">
+                                            <div class="proekt__tags__item">
+                                                <span class="">Оплата</span>
+                                                <span class="tags-point">
+                                                    $30/час
+                                                </span>
+                                            </div>
+                                            <div class="proekt__tags__item">
+
+                                                <span class="tags-point">
+                                                    Топ-эксперт
+                                                </span>
+                                            </div>
+                                            <div class="proekt__tags__item">
+
+                                                <span class="tags-point">
+                                                    Юриспруденция
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="proekt__stat__item">
-                                        <img src="./img/proekt/thumbnail.png">
-                                        23 просмотра
+                                    <div class="proekt__content__right">
+                                        <div class="proekt__stat">
+                                            <div class="proekt__stat__status">Проект опубликован</div>
+                                            <div class="proekt__stat__item">
+                                                <img src="./img/proekt/thumbnail.png">
+                                                6 дней 23 часа назад
+                                            </div>
+                                            <div class="proekt__stat__item">
+                                                <img src="./img/proekt/thumbnail.png">
+                                                23 просмотра
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="proekt__content__text">
+                                    Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut.
+                                    Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla
+                                    facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque.
+                                    Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus
+                                    at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut
+                                    morbi tincidunt augue.
+                                </div>
+                                <div class="proekt__content__tags">
+                                    <div class="proekt__content__tags__item">
+                                        design
+                                    </div>
+                                    <div class="proekt__content__tags__item">
+                                        branding
+                                    </div>
+                                    <div class="proekt__content__tags__item">
+                                        typography
+                                    </div>
+                                </div>
+                                <div class="proekt__content__bot">
+                                    <div class="proekt__location">
+                                        <svg width="14" height="20">
+                                            <use xlink:href="./img/sprite.svg#location"></use>
+                                        </svg>
+                                        Украина. Киев
+                                    </div>
+                                    <div class="proekt__content__actions">
+                                        <a href="" class="proekt__chat">
+                                            <svg width="14" height="20">
+                                                <use xlink:href="./img/sprite.svg#chat"></use>
+                                            </svg>
+                                            Чат с заказчиком
+                                        </a>
+                                        <a href="" class="btn btn-primary">Подать заявку на проект</a>
+                                    </div>
+                                </div>
+                                <div class="proekt__more">
+                                    <a href="" class="btn btn-primary">Все проекты этого заказчика</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="proekt__content__text">
-                            Adipiscing diam donec adipiscing tristique. Feugiat nisl pretium fusce id velit ut. Fringilla urna porttitor rhoncus dolor purus non enim. Est ullamcorper eget nulla facilisi etiam dignissim. Phasellus egestas tellus rutrum tellus pellentesque. Blandit turpis cursus in hac. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mollis nunc sed id semper risus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
-                        </div>
-                        <div class="proekt__content__tags">
-                            <div class="proekt__content__tags__item">
-                                design
-                            </div>
-                            <div class="proekt__content__tags__item">
-                                branding
-                            </div>
-                            <div class="proekt__content__tags__item">
-                                typography
-                            </div>
-                        </div>
-                        <div class="proekt__content__bot">
-                            <div class="proekt__location">
-                                <svg width="14" height="20">
-                                    <use xlink:href="./img/sprite.svg#location"></use>
-                                </svg>
-                                Украина. Киев
-                            </div>
-                            <div class="proekt__content__actions">
-                                <a href="" class="proekt__chat">
-                                    <svg width="14" height="20">
-                                        <use xlink:href="./img/sprite.svg#chat"></use>
-                                    </svg>
-                                    Чат с заказчиком
-                                </a>
-                                <a href="" class="btn btn-primary">Подать заявку на проект</a>
-                            </div>
-                        </div>
-                        <div class="proekt__more">
-                            <a href="" class="btn btn-primary">Все проекты этого заказчика</a>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
+        </main>
 
-      </div>
-    </main>
-    
-    <footer class="footer">
+        <footer class="footer">
     <div class="wrap">
         <div class="footer__wrap">
             <div class="footer__left">
@@ -559,12 +534,12 @@
         </div>
     </div>
 </footer>
-  </div>
-  
-  <script type="text/javascript" src="libs/jquery.min.js"></script>
-  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/vendor.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+    </div>
+
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 

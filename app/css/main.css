@@ -2394,7 +2394,7 @@ label.upload-wrap__col:hover {
   margin-bottom: 24px;
 }
 
-.filter__links a {
+.filter__links a, .filter__links button {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.1px;
@@ -2402,9 +2402,11 @@ label.upload-wrap__col:hover {
   font-weight: bold;
   transition: 0.3s all;
   font-family: "Mulish";
+  background-color: transparent;
+  border: 0;
 }
 
-.filter__links a:hover {
+.filter__links a, .filter__links button:hover {
   color: #000;
 }
 

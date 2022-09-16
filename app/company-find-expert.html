@@ -227,7 +227,7 @@
 </div>
 
                 <div class="proekt">
-                    <div class="filter">
+                    <form class="filter" id="filter-form">
     <div class="filter__title">
         Фильтры
     </div>
@@ -313,18 +313,25 @@
         <div class="filter__row">
             <ul class="filter__links">
                 <li>
-                    <a href="" class="btn btn-primary">Применить фильтры</a>
+                    <button type="submit" class="btn btn-primary">Применить фильтры</button>
                 </li>
                 <li>
-                    <a href="">Сохранить фильтры</a>
+                    <button type="button">Сохранить фильтры</button>
                 </li>
                 <li>
-                    <a href="">Мои фильтры</a>
+                    <button type="button">Мои фильтры</button>
                 </li>
             </ul>
         </div>
     </div>
-</div>
+</form>
+
+<script>
+    document.getElementById('filter-form').addEventListener('submit', function (e) {
+        e.preventDefault()
+        console.log('Усе ок!')
+    })
+</script>
                     <div class="proekt__right">
                         <div class="proekt__right__newTitle">
                             Каталог ТОП фрилансеров
